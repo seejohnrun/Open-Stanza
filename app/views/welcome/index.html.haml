@@ -1,1 +1,6 @@
 %h2 Welcome
+
+- @stanzas.each do |stanza|
+  %li= link_to stanza.title, stanza
+- if @stanzas.empty?
+  %em no stanzas are public and published

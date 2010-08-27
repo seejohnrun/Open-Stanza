@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100826215410) do
+ActiveRecord::Schema.define(:version => 20100827160619) do
 
   create_table "slugs", :force => true do |t|
     t.string   "name"
@@ -24,12 +24,14 @@ ActiveRecord::Schema.define(:version => 20100826215410) do
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "stanzas", :force => true do |t|
-    t.integer  "user_id",     :null => false
-    t.string   "title",       :null => false
+    t.integer  "user_id",                         :null => false
+    t.string   "title",                           :null => false
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "cached_slug"
+    t.boolean  "public",       :default => false, :null => false
+    t.datetime "published_at"
   end
 
 end

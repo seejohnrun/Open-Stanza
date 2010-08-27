@@ -1,6 +1,8 @@
 common: &common
   site_name: Open Stanza
-
+  john_name: John Crepezzi
+  john_email: john@crepezzi.com
+  
 development:
   <<: *common
 
