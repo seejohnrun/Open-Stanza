@@ -3,23 +3,47 @@
 body
   text-align: center
 
+a,a:visited
+  text-decoration: none
+  color: #003399
+
 #wrapper 
   margin: 0px auto
   text-align: left
   width: 960px
 
+#welcome_stanza_lists > .stanza_list
+  width: 275px
+  display: inline-block
+
+.stanza_list
+  padding: 20px
+  ul
+    margin: 0px
+    padding: 0px
+    list-style-type: none
+    li
+      color: lighten(#003399, 30%)
+      list-style-type: none
+
+.stanza_list > .name
+  font-size: 18px
+  color: #777
+  margin-bottom: 5px
+
 #site_name
-  font-size: 24px
+  
 
 #call_to_action
   color: #333
   padding: 20px
   margin: 10px 0px
-  font-size: 36px
+  font-size: 30px
   +text-shadow(#999, 1px, 1px, 3px)
   border:
     top: 1px solid #aaa
     bottom: 1px solid #aaa
   em
+    font-size: 36px
     font-style: italic
     color: #003399  

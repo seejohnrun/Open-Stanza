@@ -1,8 +1,10 @@
-%h3= name
-%ul
-- stanzas.each do |stanza|
-  %li
-    = link_to stanza.title, stanza
-    by 
-    = link_to stanza.user.public_name, stanza.user
-    = "PRIVATE!" unless stanza.public?
+.stanza_list
+  .name= name
+  %ul
+    - stanzas.each do |stanza|
+      %li
+        &#x2015;
+        = link_to stanza.title, stanza
+        by
+        = link_to stanza.user.public_name, stanza.user
+        = "PRIVATE!" unless stanza.public?
