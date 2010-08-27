@@ -946,3 +946,219 @@ Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:17:39) [GET]
 Rendering template within layouts/application
 Rendering stanzas/show
 Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:20:08) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;36;1mStanza Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stanzas`[0m
+  [4;35;1mStanza Load (0.3ms)[0m   [0mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:21:18) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;35;1mStanza Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `stanzas`[0m
+  [4;36;1mStanza Load (0.3ms)[0m   [0;1mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:21:39) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;36;1mStanza Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stanzas`[0m
+  [4;35;1mStanza Load (0.4ms)[0m   [0mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:21:56) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;35;1mStanza Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `stanzas`[0m
+  [4;36;1mStanza Load (0.3ms)[0m   [0;1mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:22:02) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;36;1mStanza Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `stanzas`[0m
+  [4;35;1mStanza Load (0.3ms)[0m   [0mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 13ms (View: 5, DB: 2) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:22:55) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;35;1mStanza Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `stanzas`[0m
+  [4;36;1mStanza Load (0.3ms)[0m   [0;1mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:24:06) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;36;1mStanza Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `stanzas`[0m
+  [4;35;1mStanza Load (0.3ms)[0m   [0mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+
+ActionView::TemplateError (undefined method `he' for #<ActionView::Base:0x103de8588>) on line #1 of app/views/stanzas/show.html.haml:
+1: %h2=he @stanza.title
+2: 
+3: %pre=h stanza.body.gsub(/\n/, ”)
+
+    app/views/stanzas/show.html.haml:1:in `_run_haml_app47views47stanzas47show46html46haml'
+    haml (3.0.17) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.17) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.17) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:57:in `process'
+    thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+    thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:24:35) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;35;1mStanza Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `stanzas`[0m
+  [4;36;1mStanza Load (0.3ms)[0m   [0;1mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+
+ActionView::TemplateError (undefined method `he' for #<ActionView::Base:0x103a41240>) on line #1 of app/views/stanzas/show.html.haml:
+1: %h2=he @stanza.title
+2: 
+3: %pre=h stanza.body.gsub(/\n/, '')
+
+    app/views/stanzas/show.html.haml:1:in `_run_haml_app47views47stanzas47show46html46haml'
+    haml (3.0.17) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.17) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.17) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:57:in `process'
+    thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+    thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:24:41) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;36;1mStanza Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stanzas`[0m
+  [4;35;1mStanza Load (0.3ms)[0m   [0mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+
+ActionView::TemplateError (undefined local variable or method `stanza' for #<ActionView::Base:0x103b612d8>) on line #3 of app/views/stanzas/show.html.haml:
+1: %h2=h @stanza.title
+2: 
+3: %pre=h stanza.body.gsub(/\n/, '')
+
+    app/views/stanzas/show.html.haml:3:in `_run_haml_app47views47stanzas47show46html46haml'
+    haml (3.0.17) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.17) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.17) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:57:in `process'
+    thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+    thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendered rescues/_trace (113.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:24:45) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;35;1mStanza Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `stanzas`[0m
+  [4;36;1mStanza Load (0.3ms)[0m   [0;1mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:24:54) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;36;1mStanza Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `stanzas`[0m
+  [4;35;1mStanza Load (0.4ms)[0m   [0mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:24:59) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;35;1mStanza Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `stanzas`[0m
+  [4;36;1mStanza Load (0.5ms)[0m   [0;1mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:25:06) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;36;1mStanza Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `stanzas`[0m
+  [4;35;1mStanza Load (0.3ms)[0m   [0mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 83ms (View: 6, DB: 1) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:25:11) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;35;1mStanza Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `stanzas`[0m
+  [4;36;1mStanza Load (0.3ms)[0m   [0;1mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-27 11:27:00) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;36;1mStanza Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `stanzas`[0m
+  [4;35;1mStanza Load (0.3ms)[0m   [0mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering stanzas/show
+Completed in 9ms (View: 2, DB: 2) | 200 OK [http://localhost/stanzas/road-not-taken]
