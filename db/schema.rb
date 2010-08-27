@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100827160619) do
+ActiveRecord::Schema.define(:version => 20100827174222) do
 
   create_table "slugs", :force => true do |t|
     t.string   "name"
@@ -32,6 +32,14 @@ ActiveRecord::Schema.define(:version => 20100827160619) do
     t.string   "cached_slug"
     t.boolean  "public",       :default => false, :null => false
     t.datetime "published_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "public_name",                    :null => false
+    t.string   "email",                          :null => false
+    t.boolean  "suspended",   :default => false, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
