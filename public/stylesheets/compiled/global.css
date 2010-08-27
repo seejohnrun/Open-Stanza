@@ -1,0 +1,32 @@
+/* line 3, ../../../app/stylesheets/global.sass */
+body {
+  text-align: center;
+}
+
+/* line 6, ../../../app/stylesheets/global.sass */
+#wrapper {
+  margin: 0px auto;
+  text-align: left;
+  width: 960px;
+}
+
+/* line 11, ../../../app/stylesheets/global.sass */
+#site_name {
+  font-size: 24px;
+}
+
+/* line 14, ../../../app/stylesheets/global.sass */
+#call_to_action {
+  color: #333333;
+  padding: 20px;
+  margin: 10px 0px;
+  font-size: 36px;
+  text-shadow: #999999 1px 1px 3px;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+}
+/* line 23, ../../../app/stylesheets/global.sass */
+#call_to_action em {
+  font-style: italic;
+  color: #003399;
+}
