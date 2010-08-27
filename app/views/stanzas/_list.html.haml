@@ -1,0 +1,5 @@
+%h3= name
+%ul
+- stanzas.each do |stanza|
+  %li
+    = link_to stanza.title, stanza  
