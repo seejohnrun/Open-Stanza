@@ -1,0 +1,11 @@
+common: &common
+  site_name: Open Stanza
+
+development:
+  <<: *common
+
+test:
+  <<: *common
+
+production:
+  <<: *common

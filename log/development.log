@@ -559,3 +559,78 @@ Processing StanzasController#show (for 127.0.0.1 at 2010-08-26 16:55:20) [GET]
   [4;35;1mStanza Load (0.2ms)[0m   [0mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
 Rendering stanzas/show
 Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StanzasController#show (for 127.0.0.1 at 2010-08-26 16:55:38) [GET]
+  Parameters: {"id"=>"road-not-taken"}
+  [4;35;1mStanza Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `stanzas`[0m
+  [4;36;1mStanza Load (0.3ms)[0m   [0;1mSELECT * FROM `stanzas` WHERE (`stanzas`.`cached_slug` = 'road-not-taken') LIMIT 1[0m
+Rendering stanzas/show
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/stanzas/road-not-taken]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-08-26 16:57:25) [GET]
+Rendering welcome/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-08-26 17:00:37) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-08-26 17:00:53) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-08-26 21:13:15) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-08-26 21:13:43) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::CONFIG) on line #7 of app/views/layouts/application.html.haml:
+4:     %title= @page_title
+5:   
+6:   %body
+7:     #site_name= CONFIG[:site_name]
+8:     %hr
+9:     = yield
+
+    app/views/layouts/application.html.haml:7:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.17) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.17) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.17) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:57:in `process'
+    thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+    thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-08-26 21:15:07) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 72ms (View: 71, DB: 0) | 200 OK [http://localhost/]
