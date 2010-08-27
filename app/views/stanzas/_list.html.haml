@@ -2,4 +2,6 @@
 %ul
 - stanzas.each do |stanza|
   %li
-    = link_to stanza.title, stanza  
+    = link_to stanza.title, stanza
+    by 
+    = link_to stanza.user.public_name, stanza.user
