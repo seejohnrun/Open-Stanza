@@ -1,3 +1,11 @@
 %h2=h @stanza.title
+== by #{link_to @stanza.user.public_name, @stanza.user}
+
+%br
 
 = h(@stanza.body).gsub(/\n/, '<br/>')
+
+- unless @stanza.copyright_notice.blank?
+  %hr
+  %strong Copyright:
+  %em= @stanza.copyright_notice

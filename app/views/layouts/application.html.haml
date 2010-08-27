@@ -4,7 +4,8 @@
     %title= @page_title
   
   %body
-    #site_name= CONFIG[:site_name]
+    #site_name
+      = link_to CONFIG[:site_name], root_url
     %hr
     = yield
     %hr

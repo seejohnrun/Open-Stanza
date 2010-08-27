@@ -4,6 +4,7 @@ class Stanza < ActiveRecord::Base
   belongs_to :user
 
   validates_presence_of :user
+  validates_length_of :copyright_notice, :maximum => 200
   
   named_scope :public, :conditions => { :public => true }
   named_scope :published, :conditions => ['published_at < ?', Time.zone.now]
