@@ -8,7 +8,8 @@ class Stanza < ActiveRecord::Base
   named_scope :public, :conditions => { :public => true }
   named_scope :published, :conditions => ['published_at < ?', Time.zone.now]
   named_scope :most_recent, lambda { |limit| { :order => 'published_at DESC', :limit => limit, :include => [:user] } }
-
+  named_scope :by_user, lambda { |user| { :conditions => { :user_id => user.id } } }
+  
   def publish!
     self.update_attributes(:published_at => Time.zone.now)
   end

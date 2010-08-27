@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   before_filter :load_user, :only => [:show]
   
   def show
+    # TODO don't show private if user is not SELF
+    @most_recent_stanzas = Stanza.published.by_user(@user).most_recent(10)
   end
 
   private

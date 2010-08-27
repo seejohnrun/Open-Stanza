@@ -1,1 +1,3 @@
 = @user.public_name
+
+= render :partial => 'stanzas/list', :locals => { :name => 'Most Recently', :stanzas => @most_recent_stanzas }
