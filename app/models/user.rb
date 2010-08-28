@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   end
   
   def public_name
-    display_name || short_name || email.split('@')[0]
+    display_name || short_name || email.split('@')[0] || "User #{self.id}"
   end
   
 end
