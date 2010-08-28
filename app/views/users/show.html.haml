@@ -1,3 +1,4 @@
-= @user.public_name
+- @page_title = @user.public_name
 
+= @user.public_name
 = render :partial => 'stanzas/list', :locals => { :name => "Most Recently by #{@user.public_name}", :stanzas => @most_recent_stanzas, :show_author => false }

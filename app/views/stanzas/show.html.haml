@@ -1,3 +1,5 @@
+- @page_title = "#{@stanza.title} by #{@stanza.user.public_name}"
+
 .stanza
   %h2=h @stanza.title
   .byline== by #{link_to @stanza.user.public_name, @stanza.user}
