@@ -17,47 +17,81 @@ a, a:visited {
 }
 
 /* line 15, ../../../app/stylesheets/global.sass */
+#welcome_stanza_lists {
+  border-top: 1px solid #aaaaaa;
+}
+
+/* line 18, ../../../app/stylesheets/global.sass */
 #welcome_stanza_lists > .stanza_list {
   width: 275px;
   display: inline-block;
 }
 
-/* line 19, ../../../app/stylesheets/global.sass */
+/* line 22, ../../../app/stylesheets/global.sass */
 .stanza_list {
   padding: 20px;
 }
-/* line 21, ../../../app/stylesheets/global.sass */
+/* line 24, ../../../app/stylesheets/global.sass */
 .stanza_list ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
 }
-/* line 25, ../../../app/stylesheets/global.sass */
+/* line 28, ../../../app/stylesheets/global.sass */
 .stanza_list ul li {
   color: #3377ff;
   list-style-type: none;
 }
 
-/* line 29, ../../../app/stylesheets/global.sass */
+/* line 32, ../../../app/stylesheets/global.sass */
 .stanza_list > .name {
   font-size: 18px;
   color: #777777;
   margin-bottom: 5px;
 }
 
-/* line 37, ../../../app/stylesheets/global.sass */
+/* line 40, ../../../app/stylesheets/global.sass */
 #call_to_action {
   color: #333333;
   padding: 20px;
   margin: 10px 0px;
   font-size: 30px;
   text-shadow: #999999 1px 1px 3px;
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
 }
 /* line 46, ../../../app/stylesheets/global.sass */
 #call_to_action em {
   font-size: 36px;
   font-style: italic;
   color: #003399;
+}
+
+/* line 51, ../../../app/stylesheets/global.sass */
+.stanza {
+  padding: 20px;
+}
+/* line 53, ../../../app/stylesheets/global.sass */
+.stanza h2 {
+  font-size: 26px;
+}
+/* line 55, ../../../app/stylesheets/global.sass */
+.stanza .byline {
+  font-style: italic;
+  margin: 5px 0px 10px 0px;
+}
+/* line 58, ../../../app/stylesheets/global.sass */
+.stanza .content {
+  font-size: 18px;
+}
+/* line 60, ../../../app/stylesheets/global.sass */
+.stanza .copyright {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* line 64, ../../../app/stylesheets/global.sass */
+#footer {
+  font-style: italic;
+  padding: 20px;
+  border-top: 1px solid #aaaaaa;
+  color: #333333;
 }

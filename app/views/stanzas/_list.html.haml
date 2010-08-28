@@ -5,6 +5,7 @@
       %li
         &#x2015;
         = link_to stanza.title, stanza
-        by
-        = link_to stanza.user.public_name, stanza.user
+        - if show_author
+          by
+          = link_to stanza.user.public_name, stanza.user
         = "PRIVATE!" unless stanza.public?

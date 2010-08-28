@@ -1,11 +1,11 @@
-%h2=h @stanza.title
-== by #{link_to @stanza.user.public_name, @stanza.user}
+.stanza
+  %h2=h @stanza.title
+  .byline== by #{link_to @stanza.user.public_name, @stanza.user}
 
-%br
+  .content= h(@stanza.body).gsub(/\n/, '<br/>')
 
-= h(@stanza.body).gsub(/\n/, '<br/>')
+  - unless @stanza.copyright_notice.blank?
+    .copyright= @stanza.copyright_notice
 
-- unless @stanza.copyright_notice.blank?
-  %hr
-  %strong Copyright:
-  %em= @stanza.copyright_notice
+#welcome_stanza_lists
+  = render :partial => 'stanzas/list', :locals => { :stanzas => @more_by_author, :name => "Recently by #{@stanza.user.public_name}", :show_author => false }  
