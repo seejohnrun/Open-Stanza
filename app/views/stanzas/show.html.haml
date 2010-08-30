@@ -10,4 +10,5 @@
     .copyright= @stanza.copyright_notice
 
 #welcome_stanza_lists
-  = render :partial => 'stanzas/list', :locals => { :stanzas => @more_by_author, :name => "Recently by #{@stanza.user.public_name}", :show_author => false }  
+  - description = "Recently by #{link_to @stanza.user.public_name, @stanza.user}"
+  = render :partial => 'stanzas/list', :locals => { :stanzas => @more_by_author, :name => description, :show_author => false }  
