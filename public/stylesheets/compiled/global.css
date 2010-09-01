@@ -45,18 +45,25 @@ a, a:visited {
 }
 /* line 32, ../../../app/stylesheets/global.sass */
 .stanza_list ul li {
-  color: #3377ff;
   list-style-type: none;
 }
+/* line 33, ../../../app/stylesheets/global.sass */
+.stanza_list ul li .private_dash {
+  color: #993300;
+}
+/* line 35, ../../../app/stylesheets/global.sass */
+.stanza_list ul li .public_dash {
+  color: #3377ff;
+}
 
-/* line 36, ../../../app/stylesheets/global.sass */
+/* line 39, ../../../app/stylesheets/global.sass */
 .stanza_list > .name {
   font-size: 18px;
   color: #777777;
   margin-bottom: 5px;
 }
 
-/* line 44, ../../../app/stylesheets/global.sass */
+/* line 47, ../../../app/stylesheets/global.sass */
 #call_to_action {
   color: #333333;
   padding: 20px;
@@ -64,37 +71,42 @@ a, a:visited {
   font-size: 30px;
   text-shadow: #999999 1px 1px 3px;
 }
-/* line 50, ../../../app/stylesheets/global.sass */
+/* line 53, ../../../app/stylesheets/global.sass */
 #call_to_action em {
   font-size: 36px;
   font-style: italic;
   color: #003399;
 }
 
-/* line 55, ../../../app/stylesheets/global.sass */
+/* line 58, ../../../app/stylesheets/global.sass */
 .stanza {
   padding: 20px;
 }
-/* line 57, ../../../app/stylesheets/global.sass */
-.stanza h2 {
+/* line 60, ../../../app/stylesheets/global.sass */
+.stanza .title {
   font-size: 26px;
 }
-/* line 59, ../../../app/stylesheets/global.sass */
+/* line 62, ../../../app/stylesheets/global.sass */
+.stanza .title em {
+  color: #333333;
+  font-size: 18px;
+}
+/* line 65, ../../../app/stylesheets/global.sass */
 .stanza .byline {
   font-style: italic;
   margin: 5px 0px 10px 0px;
 }
-/* line 62, ../../../app/stylesheets/global.sass */
+/* line 68, ../../../app/stylesheets/global.sass */
 .stanza .content {
   font-size: 18px;
 }
-/* line 64, ../../../app/stylesheets/global.sass */
+/* line 70, ../../../app/stylesheets/global.sass */
 .stanza .copyright {
   margin-top: 15px;
   font-style: italic;
 }
 
-/* line 68, ../../../app/stylesheets/global.sass */
+/* line 74, ../../../app/stylesheets/global.sass */
 #footer {
   font-style: italic;
   padding: 20px;

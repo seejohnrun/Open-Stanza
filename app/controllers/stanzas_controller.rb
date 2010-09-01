@@ -1,12 +1,23 @@
 class StanzasController < ApplicationController
 
-  before_filter :load_stanza, :only => [:show]
-  before_filter :require_user, :only => [:new, :create]
+  before_filter :load_stanza, :only => [:show, :edit, :update]
+  before_filter :require_user, :only => [:new, :create, :edit, :update]
   
   def new
     @stanza = Stanza.new
   end
 
+  def edit
+  end
+
+  def update
+    if @stanza.update_attributes(params[:stanza])
+      redirect_to stanza_url(@stanza)
+    else
+      render :action => :edit
+    end
+  end
+  
   def create
     @stanza = Stanza.new(params[:stanza]) do |stanza|
       stanza.user = current_user
@@ -21,7 +32,9 @@ class StanzasController < ApplicationController
   end
   
   def show
-    @more_by_author = Stanza.published.by_user(@stanza.user)
+    (render_404; return false) unless @stanza.public? || @stanza.user == current_user #TODO move to a before_filter
+    
+    @more_by_author = Stanza.published.by_user(@stanza.user).most_recent(10)
     @more_by_author = @more_by_author.public unless @stanza.user == current_user
   end
 

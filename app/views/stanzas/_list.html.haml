@@ -3,12 +3,13 @@
   %ul
     - stanzas.each do |stanza|
       %li
-        &#x2015;
+        - css_class = stanza.public? ? 'public_dash' : 'private_dash'
+        == <span class='#{css_class}'>&#x2015</span>
+
         = link_to stanza.title, stanza
         - if show_author
           by
           = link_to stanza.user.public_name, stanza.user
-        = "PRIVATE!" unless stanza.public?
-        = "UNPUBLISHED!" unless stanza.published?
+
     - if stanzas.empty?
       %em No Stanzas

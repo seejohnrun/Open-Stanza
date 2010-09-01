@@ -1,8 +1,14 @@
 - @page_title = "#{@stanza.title} by #{@stanza.user.public_name}"
 
 .stanza
-  %h2=h @stanza.title
-  .byline== by #{link_to @stanza.user.public_name, @stanza.user}
+
+  .title
+    =h @stanza.title
+
+  .byline
+    == by #{link_to @stanza.user.public_name, @stanza.user}
+    - if @stanza.user == current_user
+      %em= "(#{link_to 'edit', edit_stanza_path(@stanza)})"
 
   .content= h(@stanza.body).gsub(/\n/, '<br/>')
 

@@ -30,7 +30,10 @@ a,a:visited
     padding: 0px
     list-style-type: none
     li
-      color: lighten(#003399, 30%)
+      .private_dash
+        color: #993300
+      .public_dash 
+        color: lighten(#003399, 30%)
       list-style-type: none
 
 .stanza_list > .name
@@ -54,8 +57,11 @@ a,a:visited
 
 .stanza
   padding: 20px
-  h2
+  .title
     font-size: 26px
+    em
+      color: #333
+      font-size: 18px
   .byline
     font-style: italic
     margin: 5px 0px 10px 0px   
