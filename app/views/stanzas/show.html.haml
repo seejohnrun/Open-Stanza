@@ -22,3 +22,6 @@
     .copyright= @stanza.copyright_notice
 
 .clear
+
+= render :partial => 'comments/list', :locals => { :comments => @stanza.comments.all(:include => [:user]) }
+= render :partial => 'comments/form', :locals => { :stanza => @stanza }

@@ -38,7 +38,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :user_session
   map.resource :account
   
-  map.resources :stanzas
+  map.resources :stanzas do |stanza|
+    stanza.resources :comments
+  end
+  
   map.resources :users
   
   map.root :controller => 'welcome'
