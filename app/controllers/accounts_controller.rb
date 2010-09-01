@@ -27,6 +27,7 @@ class AccountsController < ApplicationController
   
   def update
     @user = @current_user # makes our views "cleaner" and more consistent
+    params[:user][:display_name] = nil if params[:user].has_key?(:display_name) && params[:user][:display_name].blank?
     if @user.update_attributes(params[:user])
       flash[:notice] = "Account updated!"
       redirect_to user_url(@user)
