@@ -6,6 +6,11 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 
+  #TODO
+  def current_user
+    User.first
+  end
+  
   def render_optional_error_file(status_code)
     if status_code == :not_found
       render_404
