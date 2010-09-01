@@ -48,6 +48,14 @@ class ApplicationController < ActionController::Base
     redirect_to(session[:return_to] || default)
     session[:return_to] = nil
   end
+
+  def allow_blanks(params, *fields)
+    fields.each do |field|
+      next unless params.has_key?(field)
+      params[field] = nil if params[field].blank?
+    end
+    params
+  end
   
   def render_optional_error_file(status_code)
     if status_code == :not_found
