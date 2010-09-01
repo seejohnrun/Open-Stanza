@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100901214630) do
+ActiveRecord::Schema.define(:version => 20100901220657) do
 
   create_table "comments", :force => true do |t|
     t.integer  "user_id",                             :null => false
@@ -33,13 +33,13 @@ ActiveRecord::Schema.define(:version => 20100901214630) do
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "stanzas", :force => true do |t|
-    t.integer  "user_id",                                            :null => false
-    t.string   "title",            :limit => 100,                    :null => false
+    t.integer  "user_id",                                           :null => false
+    t.string   "title",            :limit => 100,                   :null => false
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "cached_slug"
-    t.boolean  "public",                          :default => false, :null => false
+    t.boolean  "public",                          :default => true, :null => false
     t.datetime "published_at"
     t.string   "copyright_notice", :limit => 200
   end
