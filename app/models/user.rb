@@ -12,6 +12,8 @@ class User < ActiveRecord::Base
   validates_length_of :biography, :within => 5..5000, :allow_nil => true
   validates_uniqueness_of :short_name, :allow_nil => true
 
+  attr_accessible :display_name, :email, :short_name, :biography, :password, :password_confirmation
+  
   def most_recent_stanzas
     Stanza.by_user(self).published.most_recent(limit)
   end
