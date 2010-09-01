@@ -224,3 +224,25 @@ article.stanza .copyright {
 #menu li.menu_item a:hover, #menu li.menu_item a:active {
   color: white;
 }
+
+/* line 109, ../../../app/stylesheets/global.sass */
+#user_detail {
+  padding: 20px;
+  border-bottom: 1px solid #aaaaaa;
+}
+/* line 112, ../../../app/stylesheets/global.sass */
+#user_detail #name {
+  font-size: 28px;
+}
+/* line 114, ../../../app/stylesheets/global.sass */
+#user_detail #biography {
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* line 118, ../../../app/stylesheets/global.sass */
+#user_detail #joined {
+  color: #777777;
+  font-size: 14px;
+  margin-top: 5px;
+}

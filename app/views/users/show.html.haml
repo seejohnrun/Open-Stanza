@@ -3,6 +3,12 @@
 - if current_user == @user
   = link_to 'Create a New Stanza', new_stanza_path
 
-= @user.public_name
+#user_detail
+
+  #name= @user.public_name
+  #joined= @user.created_at.to_s(:long_ordinal)
+
+  - unless @user.biography.blank?
+    #biography= h(@user.biography).gsub(/\n/, '<br/>') 
 
 = render :partial => 'stanzas/list', :locals => { :name => "All by #{@user.public_name}", :stanzas => @all_stanzas, :show_author => false }
