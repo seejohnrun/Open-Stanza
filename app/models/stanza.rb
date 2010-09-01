@@ -18,6 +18,7 @@ class Stanza < ActiveRecord::Base
   named_scope :by_user, lambda { |user| { :conditions => { :user_id => user.id } } }
   named_scope :order, lambda { |order| { :order => order } }
   named_scope :limit, lambda { |limit| { :limit => limit } }
+  named_scope :exclude, lambda { |stanza| { :conditions => ['id != ?', stanza] } }
   
   def publish!
     self.update_attributes(:published_at => Time.zone.now)
