@@ -163,20 +163,21 @@ article.stanza .title em {
 }
 /* line 71, ../../../app/stylesheets/global.sass */
 article.stanza .byline {
+  font-size: 13px;
   font-style: italic;
   margin: 5px 0px 10px 0px;
 }
-/* line 74, ../../../app/stylesheets/global.sass */
+/* line 75, ../../../app/stylesheets/global.sass */
 article.stanza .content {
   font-size: 16px;
 }
-/* line 76, ../../../app/stylesheets/global.sass */
+/* line 77, ../../../app/stylesheets/global.sass */
 article.stanza .copyright {
   margin-top: 15px;
   font-style: italic;
 }
 
-/* line 80, ../../../app/stylesheets/global.sass */
+/* line 81, ../../../app/stylesheets/global.sass */
 #footer {
   font-style: italic;
   padding: 20px;
@@ -184,12 +185,12 @@ article.stanza .copyright {
   color: #333333;
 }
 
-/* line 86, ../../../app/stylesheets/global.sass */
+/* line 87, ../../../app/stylesheets/global.sass */
 .clear {
   clear: both;
 }
 
-/* line 89, ../../../app/stylesheets/global.sass */
+/* line 90, ../../../app/stylesheets/global.sass */
 #top {
   background: #003366;
   -moz-border-radius: 0 0 5px 5px;
@@ -200,23 +201,23 @@ article.stanza .copyright {
   border-radius: 0 0 5px 5px;
 }
 
-/* line 93, ../../../app/stylesheets/global.sass */
+/* line 94, ../../../app/stylesheets/global.sass */
 #menu {
   padding: 10px 20px;
   float: right;
 }
-/* line 96, ../../../app/stylesheets/global.sass */
+/* line 97, ../../../app/stylesheets/global.sass */
 #menu li.menu_item {
   font-size: 15px;
   display: inline-block;
   margin-left: 10px;
   color: #777777;
 }
-/* line 101, ../../../app/stylesheets/global.sass */
+/* line 102, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a, #menu li.menu_item a:visited {
   color: #cccccc;
 }
-/* line 103, ../../../app/stylesheets/global.sass */
+/* line 104, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a:hover, #menu li.menu_item a:active {
   color: white;
 }
