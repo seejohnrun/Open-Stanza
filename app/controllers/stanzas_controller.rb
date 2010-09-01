@@ -35,8 +35,7 @@ class StanzasController < ApplicationController
   end
   
   def show
-    @more_by_author = Stanza.published.by_user(@stanza.user).most_recent.limit(10).exclude(@stanza)
-    @more_by_author = @more_by_author.public unless @stanza.user == current_user
+    @more_by_author = Stanza.published.public.by_user(@stanza.user).most_recent.limit(10).exclude(@stanza)
   end
 
   private
