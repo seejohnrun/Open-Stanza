@@ -6,7 +6,9 @@
 #user_detail
 
   #name= @user.public_name
-  #joined= @user.created_at.to_s(:long_ordinal)
+  #joined 
+    Joined
+    = @user.created_at.to_s(:long_ordinal)
 
   - unless @user.biography.blank?
     #biography= h(@user.biography).gsub(/\n/, '<br/>') 

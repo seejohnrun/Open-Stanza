@@ -236,11 +236,10 @@ article.stanza .copyright {
 }
 /* line 114, ../../../app/stylesheets/global.sass */
 #user_detail #biography {
-  font-style: italic;
   font-size: 16px;
   margin-top: 10px;
 }
-/* line 118, ../../../app/stylesheets/global.sass */
+/* line 117, ../../../app/stylesheets/global.sass */
 #user_detail #joined {
   color: #777777;
   font-size: 14px;
