@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100901030546) do
+ActiveRecord::Schema.define(:version => 20100901200018) do
 
   create_table "slugs", :force => true do |t|
     t.string   "name"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(:version => 20100901030546) do
 
   create_table "stanzas", :force => true do |t|
     t.integer  "user_id",                                            :null => false
-    t.string   "title",                                              :null => false
+    t.string   "title",            :limit => 100,                    :null => false
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20100901030546) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "display_name",                                        :null => false
+    t.string   "display_name",       :limit => 50
     t.string   "email",                                               :null => false
     t.boolean  "suspended",                        :default => false, :null => false
     t.datetime "created_at"
@@ -54,5 +54,7 @@ ActiveRecord::Schema.define(:version => 20100901030546) do
     t.string   "current_login_ip",   :limit => 18
     t.string   "last_login_ip",      :limit => 18
   end
+
+  add_index "users", ["short_name"], :name => "short_name_unique", :unique => true
 
 end

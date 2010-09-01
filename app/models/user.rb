@@ -4,7 +4,9 @@ class User < ActiveRecord::Base
   has_friendly_id :short_name, :use_slug => false, :allow_nil => true # users don't have to have names
 
   acts_as_authentic
-  
+
+  validates_presence_of :email
+  validates_length_of :display_name, :within => 5..50, :allow_nil => true
   validates_length_of :short_name, :maximum => 50, :allow_nil => true
   validates_uniqueness_of :short_name, :allow_nil => true
 
