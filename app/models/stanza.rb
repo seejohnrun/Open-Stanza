@@ -9,6 +9,8 @@ class Stanza < ActiveRecord::Base
   validates_length_of :title, :within => 1..100
   validates_length_of :copyright_notice, :maximum => 200, :allow_nil => true
   validates_length_of :body, :within => 10..65535 # SQL 'TEXT' type
+
+  attr_protected :user_id, :created_at, :updated_at, :cached_slug, :published_at
   
   named_scope :public, :conditions => { :public => true }
   named_scope :published, :conditions => ['published_at <= ?', Time.zone.now]
