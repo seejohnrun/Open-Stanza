@@ -7,4 +7,6 @@ class Comment < ActiveRecord::Base
   validates_presence_of :user
   validates_length_of :body, :within => 10..5000
 
+  attr_accessible :body
+  
 end
