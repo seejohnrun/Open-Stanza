@@ -3,6 +3,7 @@
   %ul
     - stanzas.each do |stanza|
       %li
+        .clear
         - css_class = stanza.public? ? 'public_dash' : 'private_dash'
         == <span class='#{css_class}'>&#x2015</span>
 

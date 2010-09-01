@@ -92,48 +92,68 @@ a, a:visited {
 }
 
 /* line 25, ../../../app/stylesheets/global.sass */
+#sidebar_stanza_lists {
+  float: right;
+  margin: 20px 0px 20px 20px;
+  border-left: 1px solid #cccccc;
+}
+
+/* line 30, ../../../app/stylesheets/global.sass */
+#sidebar_stanza_lists > .stanza_list {
+  width: 200px;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+/* line 35, ../../../app/stylesheets/global.sass */
 #welcome_stanza_lists > .stanza_list {
   width: 275px;
   display: inline-block;
 }
 
-/* line 29, ../../../app/stylesheets/global.sass */
+/* line 39, ../../../app/stylesheets/global.sass */
+#sidebar_stanza_lists .public_dash, #sidebar_stanza_lists .private_dash {
+  float: right;
+  margin-left: 5px;
+}
+
+/* line 43, ../../../app/stylesheets/global.sass */
 .stanza_list {
   padding: 20px;
 }
-/* line 31, ../../../app/stylesheets/global.sass */
+/* line 45, ../../../app/stylesheets/global.sass */
 .stanza_list em {
   color: #aaaaaa;
   font-style: italic;
   font-size: 17px;
 }
-/* line 35, ../../../app/stylesheets/global.sass */
+/* line 49, ../../../app/stylesheets/global.sass */
 .stanza_list ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
 }
-/* line 39, ../../../app/stylesheets/global.sass */
+/* line 53, ../../../app/stylesheets/global.sass */
 .stanza_list ul li {
   list-style-type: none;
 }
-/* line 40, ../../../app/stylesheets/global.sass */
+/* line 54, ../../../app/stylesheets/global.sass */
 .stanza_list ul li .private_dash {
   color: #993300;
 }
-/* line 42, ../../../app/stylesheets/global.sass */
+/* line 56, ../../../app/stylesheets/global.sass */
 .stanza_list ul li .public_dash {
   color: #3377ff;
 }
 
-/* line 46, ../../../app/stylesheets/global.sass */
+/* line 60, ../../../app/stylesheets/global.sass */
 .stanza_list > .name {
   font-size: 18px;
   color: #777777;
   margin-bottom: 5px;
 }
 
-/* line 54, ../../../app/stylesheets/global.sass */
+/* line 68, ../../../app/stylesheets/global.sass */
 #call_to_action {
   color: #333333;
   padding: 20px;
@@ -141,37 +161,37 @@ a, a:visited {
   font-size: 30px;
   text-shadow: #999999 1px 1px 3px;
 }
-/* line 60, ../../../app/stylesheets/global.sass */
+/* line 74, ../../../app/stylesheets/global.sass */
 #call_to_action em {
   font-size: 36px;
   font-style: italic;
   color: #003399;
 }
 
-/* line 65, ../../../app/stylesheets/global.sass */
+/* line 79, ../../../app/stylesheets/global.sass */
 article.stanza {
   padding: 20px;
 }
-/* line 67, ../../../app/stylesheets/global.sass */
+/* line 81, ../../../app/stylesheets/global.sass */
 article.stanza .title {
   font-size: 26px;
 }
-/* line 69, ../../../app/stylesheets/global.sass */
+/* line 83, ../../../app/stylesheets/global.sass */
 article.stanza .title em {
   color: #333333;
   font-size: 18px;
 }
-/* line 72, ../../../app/stylesheets/global.sass */
+/* line 86, ../../../app/stylesheets/global.sass */
 article.stanza .byline {
   font-size: 13px;
   color: #555555;
   margin: 5px 0px 10px 0px;
 }
-/* line 76, ../../../app/stylesheets/global.sass */
+/* line 90, ../../../app/stylesheets/global.sass */
 article.stanza .content {
   font-size: 16px;
 }
-/* line 78, ../../../app/stylesheets/global.sass */
+/* line 92, ../../../app/stylesheets/global.sass */
 article.stanza .copyright {
   margin-top: 15px;
   font-style: italic;
@@ -179,7 +199,7 @@ article.stanza .copyright {
   color: #555555;
 }
 
-/* line 84, ../../../app/stylesheets/global.sass */
+/* line 98, ../../../app/stylesheets/global.sass */
 #footer {
   font-style: italic;
   padding: 20px;
@@ -187,12 +207,12 @@ article.stanza .copyright {
   color: #333333;
 }
 
-/* line 90, ../../../app/stylesheets/global.sass */
+/* line 104, ../../../app/stylesheets/global.sass */
 .clear {
   clear: both;
 }
 
-/* line 93, ../../../app/stylesheets/global.sass */
+/* line 107, ../../../app/stylesheets/global.sass */
 #top {
   background: #003366;
   -moz-border-radius: 0 0 5px 5px;
@@ -206,54 +226,54 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #003366 0%, #003399 100%);
 }
 
-/* line 98, ../../../app/stylesheets/global.sass */
+/* line 112, ../../../app/stylesheets/global.sass */
 #menu {
   padding: 10px 20px;
   float: right;
 }
-/* line 101, ../../../app/stylesheets/global.sass */
+/* line 115, ../../../app/stylesheets/global.sass */
 #menu li.menu_item {
   font-size: 15px;
   display: inline-block;
   margin-left: 10px;
   color: #777777;
 }
-/* line 106, ../../../app/stylesheets/global.sass */
+/* line 120, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a, #menu li.menu_item a:visited {
   color: #cccccc;
 }
-/* line 108, ../../../app/stylesheets/global.sass */
+/* line 122, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a:hover, #menu li.menu_item a:active {
   color: white;
 }
 
-/* line 111, ../../../app/stylesheets/global.sass */
+/* line 125, ../../../app/stylesheets/global.sass */
 #user_detail {
   padding: 20px;
   border-bottom: 1px solid #aaaaaa;
 }
-/* line 114, ../../../app/stylesheets/global.sass */
+/* line 128, ../../../app/stylesheets/global.sass */
 #user_detail #name {
   font-size: 28px;
 }
-/* line 116, ../../../app/stylesheets/global.sass */
+/* line 130, ../../../app/stylesheets/global.sass */
 #user_detail #biography {
   font-size: 16px;
   margin-top: 10px;
 }
-/* line 119, ../../../app/stylesheets/global.sass */
+/* line 133, ../../../app/stylesheets/global.sass */
 #user_detail #joined {
   color: #777777;
   font-size: 14px;
   margin-top: 5px;
 }
 
-/* line 124, ../../../app/stylesheets/global.sass */
+/* line 138, ../../../app/stylesheets/global.sass */
 #create_side_button {
   float: right;
   margin: 20px;
 }
-/* line 127, ../../../app/stylesheets/global.sass */
+/* line 141, ../../../app/stylesheets/global.sass */
 #create_side_button a, #create_side_button a:visited {
   padding: 5px 10px;
   display: block;
@@ -270,7 +290,7 @@ article.stanza .copyright {
   background-image: -moz-linear-gradient(top, #888888 0%, #333333 100%);
   background-image: linear-gradient(top, #888888 0%, #333333 100%);
 }
-/* line 135, ../../../app/stylesheets/global.sass */
+/* line 149, ../../../app/stylesheets/global.sass */
 #create_side_button a:hover, #create_side_button a:active {
   background: #333333;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #555555), color-stop(100%, #000000));
