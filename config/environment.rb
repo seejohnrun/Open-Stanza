@@ -16,7 +16,8 @@ Rails::Initializer.run do |config|
 
   config.gem 'haml'
   config.gem 'friendly_id'
-  config.gem "compass", :version => ">= 0.10.4"
+  config.gem 'compass', :version => '>= 0.10.4'
+  config.gem 'authlogic'
   
   # Specify gems that this application depends on and have them installed with rake gems:install
   # config.gem "bj"

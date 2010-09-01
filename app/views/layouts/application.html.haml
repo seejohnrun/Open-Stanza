@@ -9,6 +9,13 @@
     = stylesheet_link_tag 'compiled/global.css', :media => 'screen, projection'
 
   %body
+    = link_to 'Home', root_path
+    - unless current_user.nil?
+      = link_to 'Logout', user_session_path, :method => :delete
+    - else
+      = link_to 'Login', new_user_session_path
+      = link_to 'Register', new_account_path
+
     #wrapper 
       #site_name
         = link_to CONFIG[:site_name], root_url
