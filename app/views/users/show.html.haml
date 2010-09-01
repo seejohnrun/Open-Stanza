@@ -1,4 +1,7 @@
 - @page_title = @user.public_name
 
+- if current_user == @user
+  = link_to 'Create a New Stanza', new_stanza_path
+
 = @user.public_name
 = render :partial => 'stanzas/list', :locals => { :name => "Most Recently by #{@user.public_name}", :stanzas => @most_recent_stanzas, :show_author => false }

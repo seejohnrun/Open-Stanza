@@ -1,0 +1,28 @@
+%h1 New Stanza
+
+- form_for @stanza, stanzas_path do |f|
+
+  = f.error_messages
+
+  %br
+
+  = f.label :title
+  = f.text_field :title
+
+  %br
+
+  = f.label :public, 'Public?'
+  = f.check_box :public
+
+  %br
+
+  = f.text_area :body
+
+  %br
+
+  = f.label :copyright_notice, 'Copyright Details'
+  = f.text_field :copyright_notice
+
+  %br
+
+  = f.submit 'Save Stanza'
