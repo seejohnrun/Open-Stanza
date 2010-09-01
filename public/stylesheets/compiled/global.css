@@ -146,3 +146,7 @@ a, a:visited {
 #menu li.menu_item a, #menu li.menu_item a:visited {
   color: #cccccc;
 }
+/* line 98, ../../../app/stylesheets/global.sass */
+#menu li.menu_item a:hover, #menu li.menu_item a:active {
+  color: white;
+}
