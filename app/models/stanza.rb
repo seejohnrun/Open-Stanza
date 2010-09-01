@@ -11,11 +11,12 @@ class Stanza < ActiveRecord::Base
   
   named_scope :public, :conditions => { :public => true }
   named_scope :published, :conditions => ['published_at <= ?', Time.zone.now]
-  named_scope :most_recent, lambda { |limit| { :order => 'published_at DESC', :limit => limit, :include => [:user] } }
-  named_scope :most_comments, lambda { |limit| { :order => '(select count(1) as comment_count from comments where stanza_id = stanzas.`id`) DESC', :include => [:user], :limit => limit } }
-  named_scope :most_comments_since, lambda { |limit, date| { :order => "(select count(1) as comment_count from comments where stanza_id = stanzas.`id` and stanzas.`created_at` >= '#{date.to_s(:db)}') DESC", :include => [:user], :limit => limit } }
+  named_scope :most_recent, { :order => 'published_at DESC', :include => [:user] }
+  named_scope :most_comments, { :order => '(select count(1) as comment_count from comments where stanza_id = stanzas.`id`) DESC', :include => [:user] }
+  named_scope :most_comments_since, lambda { |date| { :order => "(select count(1) as comment_count from comments where stanza_id = stanzas.`id` and stanzas.`created_at` >= '#{date.to_s(:db)}') DESC", :include => [:user] } }
   named_scope :by_user, lambda { |user| { :conditions => { :user_id => user.id } } }
   named_scope :order, lambda { |order| { :order => order } }
+  named_scope :limit, lambda { |limit| { :limit => limit } }
   
   def publish!
     self.update_attributes(:published_at => Time.zone.now)
