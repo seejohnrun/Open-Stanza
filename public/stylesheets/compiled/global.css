@@ -262,16 +262,16 @@ article.stanza .copyright {
   -ms-border-radius: 3px 3px 3px 3px;
   -khtml-border-radius: 3px 3px 3px 3px;
   border-radius: 3px 3px 3px 3px;
-  background: #777777;
+  background: #555555;
   border: 1px solid #333333;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #999999), color-stop(100%, #555555));
-  background-image: -moz-linear-gradient(top, #999999 0%, #555555 100%);
-  background-image: linear-gradient(top, #999999 0%, #555555 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #888888), color-stop(100%, #333333));
+  background-image: -moz-linear-gradient(top, #888888 0%, #333333 100%);
+  background-image: linear-gradient(top, #888888 0%, #333333 100%);
 }
 /* line 133, ../../../app/stylesheets/global.sass */
 #create_side_button a:hover, #create_side_button a:active {
-  background: #777777;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #777777), color-stop(100%, #000000));
-  background-image: -moz-linear-gradient(top, #777777 0%, #000000 100%);
-  background-image: linear-gradient(top, #777777 0%, #000000 100%);
+  background: #333333;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #555555), color-stop(100%, #000000));
+  background-image: -moz-linear-gradient(top, #555555 0%, #000000 100%);
+  background-image: linear-gradient(top, #555555 0%, #000000 100%);
 }
