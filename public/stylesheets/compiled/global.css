@@ -1,69 +1,69 @@
-/* line 3, ../../../app/stylesheets/global.sass */
+/* line 4, ../../../app/stylesheets/global.sass */
 body {
   text-align: center;
 }
 
-/* line 6, ../../../app/stylesheets/global.sass */
+/* line 7, ../../../app/stylesheets/global.sass */
 a, a:visited {
   text-decoration: none;
   color: #003399;
 }
 
-/* line 10, ../../../app/stylesheets/global.sass */
+/* line 11, ../../../app/stylesheets/global.sass */
 #wrapper {
   margin: 0px auto;
   text-align: left;
   width: 960px;
 }
 
-/* line 15, ../../../app/stylesheets/global.sass */
+/* line 16, ../../../app/stylesheets/global.sass */
 #welcome_stanza_lists {
   border-top: 1px solid #aaaaaa;
 }
 
-/* line 18, ../../../app/stylesheets/global.sass */
+/* line 19, ../../../app/stylesheets/global.sass */
 #welcome_stanza_lists > .stanza_list {
   width: 275px;
   display: inline-block;
 }
 
-/* line 22, ../../../app/stylesheets/global.sass */
+/* line 23, ../../../app/stylesheets/global.sass */
 .stanza_list {
   padding: 20px;
 }
-/* line 24, ../../../app/stylesheets/global.sass */
+/* line 25, ../../../app/stylesheets/global.sass */
 .stanza_list em {
   color: #aaaaaa;
   font-style: italic;
   font-size: 17px;
 }
-/* line 28, ../../../app/stylesheets/global.sass */
+/* line 29, ../../../app/stylesheets/global.sass */
 .stanza_list ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
 }
-/* line 32, ../../../app/stylesheets/global.sass */
+/* line 33, ../../../app/stylesheets/global.sass */
 .stanza_list ul li {
   list-style-type: none;
 }
-/* line 33, ../../../app/stylesheets/global.sass */
+/* line 34, ../../../app/stylesheets/global.sass */
 .stanza_list ul li .private_dash {
   color: #993300;
 }
-/* line 35, ../../../app/stylesheets/global.sass */
+/* line 36, ../../../app/stylesheets/global.sass */
 .stanza_list ul li .public_dash {
   color: #3377ff;
 }
 
-/* line 39, ../../../app/stylesheets/global.sass */
+/* line 40, ../../../app/stylesheets/global.sass */
 .stanza_list > .name {
   font-size: 18px;
   color: #777777;
   margin-bottom: 5px;
 }
 
-/* line 47, ../../../app/stylesheets/global.sass */
+/* line 48, ../../../app/stylesheets/global.sass */
 #call_to_action {
   color: #333333;
   padding: 20px;
@@ -71,45 +71,78 @@ a, a:visited {
   font-size: 30px;
   text-shadow: #999999 1px 1px 3px;
 }
-/* line 53, ../../../app/stylesheets/global.sass */
+/* line 54, ../../../app/stylesheets/global.sass */
 #call_to_action em {
   font-size: 36px;
   font-style: italic;
   color: #003399;
 }
 
-/* line 58, ../../../app/stylesheets/global.sass */
+/* line 59, ../../../app/stylesheets/global.sass */
 .stanza {
   padding: 20px;
 }
-/* line 60, ../../../app/stylesheets/global.sass */
+/* line 61, ../../../app/stylesheets/global.sass */
 .stanza .title {
   font-size: 26px;
 }
-/* line 62, ../../../app/stylesheets/global.sass */
+/* line 63, ../../../app/stylesheets/global.sass */
 .stanza .title em {
   color: #333333;
   font-size: 18px;
 }
-/* line 65, ../../../app/stylesheets/global.sass */
+/* line 66, ../../../app/stylesheets/global.sass */
 .stanza .byline {
   font-style: italic;
   margin: 5px 0px 10px 0px;
 }
-/* line 68, ../../../app/stylesheets/global.sass */
+/* line 69, ../../../app/stylesheets/global.sass */
 .stanza .content {
   font-size: 18px;
 }
-/* line 70, ../../../app/stylesheets/global.sass */
+/* line 71, ../../../app/stylesheets/global.sass */
 .stanza .copyright {
   margin-top: 15px;
   font-style: italic;
 }
 
-/* line 74, ../../../app/stylesheets/global.sass */
+/* line 75, ../../../app/stylesheets/global.sass */
 #footer {
   font-style: italic;
   padding: 20px;
   border-top: 1px solid #aaaaaa;
   color: #333333;
+}
+
+/* line 81, ../../../app/stylesheets/global.sass */
+.clear {
+  clear: both;
+}
+
+/* line 84, ../../../app/stylesheets/global.sass */
+#top {
+  background: #003366;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -khtml-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+/* line 88, ../../../app/stylesheets/global.sass */
+#menu {
+  padding: 10px 20px;
+  float: right;
+}
+/* line 91, ../../../app/stylesheets/global.sass */
+#menu li.menu_item {
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 10px;
+  color: #777777;
+}
+/* line 96, ../../../app/stylesheets/global.sass */
+#menu li.menu_item a, #menu li.menu_item a:visited {
+  color: #cccccc;
 }

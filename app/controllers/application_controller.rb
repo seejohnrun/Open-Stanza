@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
 
   helper :all # include all helpers, all the time
-  helper_method :current_user_session, :current_user
+  helper_method :current_user_session, :current_user, :user_logged_in?
   
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
@@ -11,6 +11,10 @@ class ApplicationController < ActionController::Base
   def current_user_session
     return @current_user_session if defined?(@current_user_session)
     @current_user_session = UserSession.find
+  end
+
+  def user_logged_in?
+    !!current_user
   end
   
   def current_user
