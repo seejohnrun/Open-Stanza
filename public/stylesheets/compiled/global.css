@@ -1,74 +1,139 @@
-/* line 4, ../../../app/stylesheets/global.sass */
+/* line 14, ../../../../../.rvm/gems/ree-1.8.6-20090610/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../.rvm/gems/ree-1.8.6-20090610/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../.rvm/gems/ree-1.8.6-20090610/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../.rvm/gems/ree-1.8.6-20090610/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../.rvm/gems/ree-1.8.6-20090610/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../.rvm/gems/ree-1.8.6-20090610/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../.rvm/gems/ree-1.8.6-20090610/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../.rvm/gems/ree-1.8.6-20090610/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 107, ../../../../../.rvm/gems/ree-1.8.6-20090610/gems/compass-0.10.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+section, article, aside, header, footer, nav, dialog, figure {
+  display: block;
+}
+
+/* line 6, ../../../app/stylesheets/global.sass */
 * {
   font-family: Georgia, serif;
 }
 
-/* line 7, ../../../app/stylesheets/global.sass */
+/* line 9, ../../../app/stylesheets/global.sass */
 body {
   text-align: center;
 }
 
-/* line 10, ../../../app/stylesheets/global.sass */
+/* line 12, ../../../app/stylesheets/global.sass */
 a, a:visited {
   text-decoration: none;
   color: #003399;
 }
 
-/* line 14, ../../../app/stylesheets/global.sass */
+/* line 16, ../../../app/stylesheets/global.sass */
 #wrapper {
   margin: 0px auto;
   text-align: left;
   width: 960px;
 }
 
-/* line 19, ../../../app/stylesheets/global.sass */
+/* line 21, ../../../app/stylesheets/global.sass */
 #welcome_stanza_lists {
   border-top: 1px solid #aaaaaa;
 }
 
-/* line 22, ../../../app/stylesheets/global.sass */
+/* line 24, ../../../app/stylesheets/global.sass */
 #welcome_stanza_lists > .stanza_list {
   width: 275px;
   display: inline-block;
 }
 
-/* line 26, ../../../app/stylesheets/global.sass */
+/* line 28, ../../../app/stylesheets/global.sass */
 .stanza_list {
   padding: 20px;
 }
-/* line 28, ../../../app/stylesheets/global.sass */
+/* line 30, ../../../app/stylesheets/global.sass */
 .stanza_list em {
   color: #aaaaaa;
   font-style: italic;
   font-size: 17px;
 }
-/* line 32, ../../../app/stylesheets/global.sass */
+/* line 34, ../../../app/stylesheets/global.sass */
 .stanza_list ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
 }
-/* line 36, ../../../app/stylesheets/global.sass */
+/* line 38, ../../../app/stylesheets/global.sass */
 .stanza_list ul li {
   list-style-type: none;
 }
-/* line 37, ../../../app/stylesheets/global.sass */
+/* line 39, ../../../app/stylesheets/global.sass */
 .stanza_list ul li .private_dash {
   color: #993300;
 }
-/* line 39, ../../../app/stylesheets/global.sass */
+/* line 41, ../../../app/stylesheets/global.sass */
 .stanza_list ul li .public_dash {
   color: #3377ff;
 }
 
-/* line 43, ../../../app/stylesheets/global.sass */
+/* line 45, ../../../app/stylesheets/global.sass */
 .stanza_list > .name {
   font-size: 18px;
   color: #777777;
   margin-bottom: 5px;
 }
 
-/* line 51, ../../../app/stylesheets/global.sass */
+/* line 53, ../../../app/stylesheets/global.sass */
 #call_to_action {
   color: #333333;
   padding: 20px;
@@ -76,42 +141,42 @@ a, a:visited {
   font-size: 30px;
   text-shadow: #999999 1px 1px 3px;
 }
-/* line 57, ../../../app/stylesheets/global.sass */
+/* line 59, ../../../app/stylesheets/global.sass */
 #call_to_action em {
   font-size: 36px;
   font-style: italic;
   color: #003399;
 }
 
-/* line 62, ../../../app/stylesheets/global.sass */
-.stanza {
+/* line 64, ../../../app/stylesheets/global.sass */
+article.stanza {
   padding: 20px;
 }
-/* line 64, ../../../app/stylesheets/global.sass */
-.stanza .title {
+/* line 66, ../../../app/stylesheets/global.sass */
+article.stanza .title {
   font-size: 26px;
 }
-/* line 66, ../../../app/stylesheets/global.sass */
-.stanza .title em {
+/* line 68, ../../../app/stylesheets/global.sass */
+article.stanza .title em {
   color: #333333;
   font-size: 18px;
 }
-/* line 69, ../../../app/stylesheets/global.sass */
-.stanza .byline {
+/* line 71, ../../../app/stylesheets/global.sass */
+article.stanza .byline {
   font-style: italic;
   margin: 5px 0px 10px 0px;
 }
-/* line 72, ../../../app/stylesheets/global.sass */
-.stanza .content {
-  font-size: 18px;
-}
 /* line 74, ../../../app/stylesheets/global.sass */
-.stanza .copyright {
+article.stanza .content {
+  font-size: 16px;
+}
+/* line 76, ../../../app/stylesheets/global.sass */
+article.stanza .copyright {
   margin-top: 15px;
   font-style: italic;
 }
 
-/* line 78, ../../../app/stylesheets/global.sass */
+/* line 80, ../../../app/stylesheets/global.sass */
 #footer {
   font-style: italic;
   padding: 20px;
@@ -119,12 +184,12 @@ a, a:visited {
   color: #333333;
 }
 
-/* line 84, ../../../app/stylesheets/global.sass */
+/* line 86, ../../../app/stylesheets/global.sass */
 .clear {
   clear: both;
 }
 
-/* line 87, ../../../app/stylesheets/global.sass */
+/* line 89, ../../../app/stylesheets/global.sass */
 #top {
   background: #003366;
   -moz-border-radius: 0 0 5px 5px;
@@ -135,23 +200,23 @@ a, a:visited {
   border-radius: 0 0 5px 5px;
 }
 
-/* line 91, ../../../app/stylesheets/global.sass */
+/* line 93, ../../../app/stylesheets/global.sass */
 #menu {
   padding: 10px 20px;
   float: right;
 }
-/* line 94, ../../../app/stylesheets/global.sass */
+/* line 96, ../../../app/stylesheets/global.sass */
 #menu li.menu_item {
   font-size: 15px;
   display: inline-block;
   margin-left: 10px;
   color: #777777;
 }
-/* line 99, ../../../app/stylesheets/global.sass */
+/* line 101, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a, #menu li.menu_item a:visited {
   color: #cccccc;
 }
-/* line 101, ../../../app/stylesheets/global.sass */
+/* line 103, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a:hover, #menu li.menu_item a:active {
   color: white;
 }
