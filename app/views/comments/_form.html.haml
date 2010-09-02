@@ -1,11 +1,9 @@
-- form_for :comment, :url => stanza_comments_path(stanza) do |f|
+.comment_form
 
-  = f.error_messages
+  - form_for :comment, :url => stanza_comments_path(stanza) do |f|
 
-  %br
+    = f.error_messages
 
-  = f.text_area :body
-
-  %br
-
-  = f.submit 'Submit Comment'
+    = f.text_area :body
+    %br
+    = f.submit 'Submit Comment'

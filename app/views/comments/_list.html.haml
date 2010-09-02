@@ -1,5 +1,11 @@
-- comments.each do |comment|
+- unless comments.map.empty?
 
-  .comment
-    %strong= comment.user.public_name
-    comment.body 
+  #comments
+    
+    - comments.each do |comment|
+      
+      .comment
+        .author_info
+          %span.user= link_to comment.user.public_name, user_path(comment.user)
+          %span.when= comment.created_at.to_s(:long_ordinal)
+        .body= comment.body

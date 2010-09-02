@@ -28,7 +28,7 @@ a,a:visited
   border-left: 1px solid #ccc
 
 #sidebar_stanza_lists > .stanza_list
-  width: 200px
+  width: 230px
   padding: 10px 20px
   text-align: right
 
@@ -149,3 +149,25 @@ article.stanza
   a:hover, a:active
     background: #333 
     +linear-gradient(color-stops(#555, #000))
+
+#comments
+  padding: 20px
+  border-top: 1px solid #aaa
+  .comment
+    margin-bottom: 10px
+    .author_info
+      font-size: 14px 
+      .when
+        color: #aaa
+        margin-left: 10px
+    .body
+      font-size: 16px
+  .comment:last-child
+    margin-bottom: 0px
+
+.comment_form
+  textarea
+    height: 80px
+    width: 100%
+    border: 1px solid #777
+  padding: 0px 20px 20px 20px

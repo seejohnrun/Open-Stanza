@@ -24,4 +24,5 @@
 .clear
 
 = render :partial => 'comments/list', :locals => { :comments => @stanza.comments.all(:include => [:user]) }
-= render :partial => 'comments/form', :locals => { :stanza => @stanza }
+- if user_logged_in?
+  = render :partial => 'comments/form', :locals => { :stanza => @stanza }
