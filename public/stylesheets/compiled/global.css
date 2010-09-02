@@ -328,26 +328,31 @@ article.stanza .copyright {
 /* line 165, ../../../app/stylesheets/global.sass */
 #comments .comment .author_info .when {
   color: #aaaaaa;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 /* line 168, ../../../app/stylesheets/global.sass */
-#comments .comment .body {
-  font-size: 16px;
+#comments .comment .author_info .user.author {
+  background: #fffccc;
 }
 /* line 170, ../../../app/stylesheets/global.sass */
+#comments .comment .body {
+  margin-top: 2px;
+  font-size: 16px;
+}
+/* line 173, ../../../app/stylesheets/global.sass */
 #comments .comment:first-child {
   margin-top: 20px;
 }
-/* line 172, ../../../app/stylesheets/global.sass */
+/* line 175, ../../../app/stylesheets/global.sass */
 #comments .comment:last-child {
   margin-bottom: 0px;
 }
 
-/* line 175, ../../../app/stylesheets/global.sass */
+/* line 178, ../../../app/stylesheets/global.sass */
 .comment_form {
   margin: 20px 20px 0px 20px;
 }
-/* line 177, ../../../app/stylesheets/global.sass */
+/* line 180, ../../../app/stylesheets/global.sass */
 .comment_form textarea {
   height: 80px;
   width: 100%;

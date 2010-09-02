@@ -28,7 +28,7 @@
 - if user_logged_in? || !no_comments
   #comment_section
 
-    = render :partial => 'comments/list', :locals => { :comments => comments }
+    = render :partial => 'comments/list', :locals => { :comments => comments, :author => @stanza.user }
 
     - if user_logged_in?
       = render :partial => 'comments/form', :locals => { :stanza => @stanza }
