@@ -150,11 +150,14 @@ article.stanza
     background: #333 
     +linear-gradient(color-stops(#555, #000))
 
-#comments
-  padding: 20px
+#comment_section
   border-top: 1px solid #aaa
+  margin-bottom: 20px
+
+#comments
+  padding: 0px 20px
   .comment
-    margin-bottom: 10px
+    margin: 10px 0px 10px 0px
     .author_info
       font-size: 14px 
       .when
@@ -162,12 +165,15 @@ article.stanza
         margin-left: 10px
     .body
       font-size: 16px
+  .comment:first-child
+    margin-top: 20px
   .comment:last-child
     margin-bottom: 0px
 
 .comment_form
+  margin: 20px 20px 0px 20px
   textarea
     height: 80px
     width: 100%
     border: 1px solid #777
-  padding: 0px 20px 20px 20px
+  

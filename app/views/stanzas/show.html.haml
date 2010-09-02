@@ -23,6 +23,12 @@
 
 .clear
 
-= render :partial => 'comments/list', :locals => { :comments => @stanza.comments.all(:include => [:user]) }
-- if user_logged_in?
-  = render :partial => 'comments/form', :locals => { :stanza => @stanza }
+- comments = @stanza.comments.all(:include => [:user])
+- no_comments = comments.map.empty?
+- if user_logged_in? || !no_comments
+  #comment_section
+
+    = render :partial => 'comments/list', :locals => { :comments => @stanza.comments.all(:include => [:user]) }
+
+    - if user_logged_in?
+      = render :partial => 'comments/form', :locals => { :stanza => @stanza }

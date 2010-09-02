@@ -299,37 +299,46 @@ article.stanza .copyright {
 }
 
 /* line 153, ../../../app/stylesheets/global.sass */
-#comments {
-  padding: 20px;
+#comment_section {
   border-top: 1px solid #aaaaaa;
+  margin-bottom: 20px;
 }
-/* line 156, ../../../app/stylesheets/global.sass */
+
+/* line 157, ../../../app/stylesheets/global.sass */
+#comments {
+  padding: 0px 20px;
+}
+/* line 159, ../../../app/stylesheets/global.sass */
 #comments .comment {
-  margin-bottom: 10px;
+  margin: 10px 0px 10px 0px;
 }
-/* line 158, ../../../app/stylesheets/global.sass */
+/* line 161, ../../../app/stylesheets/global.sass */
 #comments .comment .author_info {
   font-size: 14px;
 }
-/* line 160, ../../../app/stylesheets/global.sass */
+/* line 163, ../../../app/stylesheets/global.sass */
 #comments .comment .author_info .when {
   color: #aaaaaa;
   margin-left: 10px;
 }
-/* line 163, ../../../app/stylesheets/global.sass */
+/* line 166, ../../../app/stylesheets/global.sass */
 #comments .comment .body {
   font-size: 16px;
 }
-/* line 165, ../../../app/stylesheets/global.sass */
+/* line 168, ../../../app/stylesheets/global.sass */
+#comments .comment:first-child {
+  margin-top: 20px;
+}
+/* line 170, ../../../app/stylesheets/global.sass */
 #comments .comment:last-child {
   margin-bottom: 0px;
 }
 
-/* line 168, ../../../app/stylesheets/global.sass */
+/* line 173, ../../../app/stylesheets/global.sass */
 .comment_form {
-  padding: 0px 20px 20px 20px;
+  margin: 20px 20px 0px 20px;
 }
-/* line 169, ../../../app/stylesheets/global.sass */
+/* line 175, ../../../app/stylesheets/global.sass */
 .comment_form textarea {
   height: 80px;
   width: 100%;

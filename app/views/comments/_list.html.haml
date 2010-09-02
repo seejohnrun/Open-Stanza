@@ -1,11 +1,9 @@
-- unless comments.map.empty?
-
-  #comments
+#comments
     
-    - comments.each do |comment|
+  - comments.each do |comment|
       
-      .comment
-        .author_info
-          %span.user= link_to comment.user.public_name, user_path(comment.user)
-          %span.when= comment.created_at.to_s(:long_ordinal)
-        .body= comment.body
+    .comment
+      .author_info
+        %span.user= link_to comment.user.public_name, user_path(comment.user)
+        %span.when= comment.created_at.to_s(:long_ordinal)
+      .body= comment.body
