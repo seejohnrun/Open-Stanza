@@ -7,7 +7,6 @@ class Stanza < ActiveRecord::Base
   accepts_nested_attributes_for :comments
   
   validates_presence_of :user
-  validates_presence_of :title, :body
   validates_length_of :title, :within => 1..100
   validates_length_of :copyright_notice, :maximum => 200, :allow_nil => true
   validates_length_of :body, :within => 10..65535 # SQL 'TEXT' type

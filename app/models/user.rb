@@ -6,7 +6,6 @@ class User < ActiveRecord::Base
 
   acts_as_authentic
 
-  validates_presence_of :email
   validates_length_of :display_name, :within => 5..50, :allow_nil => true, :allow_blank => true
   validates_length_of :short_name, :maximum => 50, :allow_nil => true
   validates_length_of :biography, :within => 5..5000, :allow_nil => true
