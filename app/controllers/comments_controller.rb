@@ -5,14 +5,14 @@ class CommentsController < ApplicationController
   before_filter :ensure_stanza_is_public, :only => [:create]
   
   def create
-    @comment = Comment.new(params[:comment]) do |comment|
+    @comment = @stanza.comments.new(params[:comment]) do |comment|
       comment.user = current_user
-      comment.stanza = @stanza
     end
     if @comment.save
       redirect_to stanza_url(@stanza)
     else
-      render :action => :show
+      # TODO handle negative case gracefully
+      redirect_to stanza_url(@stanza)
     end
   end
 

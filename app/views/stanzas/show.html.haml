@@ -23,12 +23,12 @@
 
 .clear
 
-- comments = @stanza.comments.all(:include => [:user])
+- comments = @stanza.comments.order('created_at DESC').all(:include => [:user])
 - no_comments = comments.map.empty?
 - if user_logged_in? || !no_comments
   #comment_section
 
-    = render :partial => 'comments/list', :locals => { :comments => @stanza.comments.all(:include => [:user]) }
+    = render :partial => 'comments/list', :locals => { :comments => comments }
 
     - if user_logged_in?
       = render :partial => 'comments/form', :locals => { :stanza => @stanza }

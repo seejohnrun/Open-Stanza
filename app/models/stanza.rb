@@ -3,6 +3,8 @@ class Stanza < ActiveRecord::Base
   has_friendly_id :title, :use_slug => true, :max_length => 5
   belongs_to :user
   has_many :comments, :dependent => :destroy
+
+  accepts_nested_attributes_for :comments
   
   validates_presence_of :user
   validates_presence_of :title, :body
