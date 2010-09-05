@@ -1,10 +1,10 @@
 class StanzasController < ApplicationController
 
-  before_filter :load_stanza, :only => [:show, :edit, :update]
-  before_filter :require_user, :only => [:new, :create, :edit, :update]
+  before_filter :load_stanza, :only => [:show, :edit, :update, :destroy]
+  before_filter :require_user, :only => [:new, :create, :edit, :update, :destroy]
   before_filter :convert_blank_params, :only => [:create, :update]
   before_filter :block_private, :only => [:show]
-  before_filter :only_author, :only => [:edit, :update]
+  before_filter :only_author, :only => [:edit, :update, :destroy]
   
   def new
     @stanza = Stanza.new
@@ -19,6 +19,11 @@ class StanzasController < ApplicationController
     else
       render :action => :edit
     end
+  end
+
+  def destroy
+    @stanza.destroy
+    redirect_to user_url(current_user)
   end
   
   def create

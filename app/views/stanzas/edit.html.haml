@@ -1,5 +1,7 @@
 - @page_title = "Editing #{@stanza.title}"
 
+= link_to 'Delete Stanza', stanza_path(@stanza), :method => :delete, :confirm => "Are you sure you want to permenantly remove #{@stanza.title}?"
+
 %h1== Edit &quot;#{@stanza.title}&quot;
 
 - form_for @stanza, :url => stanza_path do |f|
