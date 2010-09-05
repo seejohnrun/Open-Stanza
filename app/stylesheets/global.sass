@@ -27,14 +27,13 @@ a,a:visited
   border: 1px solid #ccc
   +border-radius(3px)
   background: #eee
-  margin-top: 20px
+  margin: 20px 0px
+  padding-bottom: 20px
 
 #sidebar_stanza_lists > .stanza_list
+  padding: 20px 20px 0px 20px
   width: 230px
   text-align: right
-
-#sidebar_stanza_lists > .stanza_list:last-child
-  padding: 0px 20px 20px 20px
 
 #welcome_stanza_lists > .stanza_list
   width: 275px
@@ -204,14 +203,15 @@ article.stanza
     border: 1px solid #777
 
 .properties
+  float: right
+  margin-right: 10px
   font-size: 12px
   * 
+    display: inline-block
     margin-left: 2px
   .private
-    float: right
     @include red-button
   .edit_button, .edit_button:visited
-    float: right
     @include grey-button
 
 .ad

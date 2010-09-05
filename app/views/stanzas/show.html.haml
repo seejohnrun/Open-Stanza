@@ -1,10 +1,11 @@
 - @page_title = "#{@stanza.title} by #{@stanza.user.public_name}"
 
-#sidebar_stanza_lists
-  - description = "Recently by #{link_to @stanza.user.public_name, @stanza.user}"
-  = render :partial => 'stanzas/list', :locals => { :stanzas => @more_by_author, :name => description, :show_author => false }
-  - unless @most_discussed_by_author.map.empty? # is this collection empty? - avoid 'count'
-    = render :partial => 'stanzas/list', :locals => { :stanzas => @most_discussed_by_author, :name => 'Most Discussed', :show_author => false }  
+- unless @stanza.user == current_user
+  #sidebar_stanza_lists
+    - description = "Recently by #{link_to @stanza.user.public_name, @stanza.user}"
+    = render :partial => 'stanzas/list', :locals => { :stanzas => @more_by_author, :name => description, :show_author => false }
+    - unless @most_discussed_by_author.map.empty? # is this collection empty? - avoid 'count'
+      = render :partial => 'stanzas/list', :locals => { :stanzas => @most_discussed_by_author, :name => 'Most Discussed', :show_author => false }  
 
 %article.stanza
 
