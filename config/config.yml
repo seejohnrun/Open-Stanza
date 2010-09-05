@@ -1,7 +1,7 @@
 common: &common
-  site_name: Open Stanza
+  site_name: Social Stanza
   john_name: John Crepezzi
-  john_email: john@crepezzi.com
+  john_email: john@socialstanza.com
   
 development:
   <<: *common
