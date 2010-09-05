@@ -24,13 +24,17 @@ a,a:visited
 
 #sidebar_stanza_lists
   float: right
-  margin: 20px 0px 20px 20px
-  border-left: 1px solid #ccc
+  border: 1px solid #ccc
+  +border-radius(3px)
+  background: #eee
+  margin-top: 20px
 
 #sidebar_stanza_lists > .stanza_list
   width: 230px
-  padding: 10px 20px
   text-align: right
+
+#sidebar_stanza_lists > .stanza_list:last-child
+  padding: 0px 20px 20px 20px
 
 #welcome_stanza_lists > .stanza_list
   width: 275px

@@ -94,75 +94,86 @@ a, a:visited {
 /* line 25, ../../../app/stylesheets/global.sass */
 #sidebar_stanza_lists {
   float: right;
-  margin: 20px 0px 20px 20px;
-  border-left: 1px solid #cccccc;
+  border: 1px solid #cccccc;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  background: #eeeeee;
+  margin-top: 20px;
 }
 
-/* line 30, ../../../app/stylesheets/global.sass */
+/* line 32, ../../../app/stylesheets/global.sass */
 #sidebar_stanza_lists > .stanza_list {
   width: 230px;
-  padding: 10px 20px;
   text-align: right;
 }
 
-/* line 35, ../../../app/stylesheets/global.sass */
+/* line 36, ../../../app/stylesheets/global.sass */
+#sidebar_stanza_lists > .stanza_list:last-child {
+  padding: 0px 20px 20px 20px;
+}
+
+/* line 39, ../../../app/stylesheets/global.sass */
 #welcome_stanza_lists > .stanza_list {
   width: 275px;
   display: inline-block;
 }
 
-/* line 39, ../../../app/stylesheets/global.sass */
+/* line 43, ../../../app/stylesheets/global.sass */
 #sidebar_stanza_lists .public_dash, #sidebar_stanza_lists .private_dash {
   float: right;
   margin-left: 5px;
 }
 
-/* line 43, ../../../app/stylesheets/global.sass */
+/* line 47, ../../../app/stylesheets/global.sass */
 .stanza_list {
   padding: 20px;
 }
-/* line 45, ../../../app/stylesheets/global.sass */
+/* line 49, ../../../app/stylesheets/global.sass */
 .stanza_list em {
   color: #aaaaaa;
   font-style: italic;
   font-size: 17px;
 }
-/* line 49, ../../../app/stylesheets/global.sass */
+/* line 53, ../../../app/stylesheets/global.sass */
 .stanza_list ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
 }
-/* line 53, ../../../app/stylesheets/global.sass */
+/* line 57, ../../../app/stylesheets/global.sass */
 .stanza_list ul li {
   list-style-type: none;
 }
-/* line 54, ../../../app/stylesheets/global.sass */
+/* line 58, ../../../app/stylesheets/global.sass */
 .stanza_list ul li .private_dash {
   color: #993300;
 }
-/* line 56, ../../../app/stylesheets/global.sass */
+/* line 60, ../../../app/stylesheets/global.sass */
 .stanza_list ul li .public_dash {
   color: #3377ff;
 }
 
-/* line 60, ../../../app/stylesheets/global.sass */
+/* line 64, ../../../app/stylesheets/global.sass */
 .stanza_list > .name {
   font-size: 18px;
   color: #777777;
   margin-bottom: 5px;
 }
 
-/* line 65, ../../../app/stylesheets/global.sass */
+/* line 69, ../../../app/stylesheets/global.sass */
 #site_name {
   font-size: 18px;
 }
-/* line 67, ../../../app/stylesheets/global.sass */
+/* line 71, ../../../app/stylesheets/global.sass */
 #site_name a, #site_name a:visited {
   color: white;
 }
 
-/* line 70, ../../../app/stylesheets/global.sass */
+/* line 74, ../../../app/stylesheets/global.sass */
 #call_to_action {
   color: #333333;
   padding: 20px;
@@ -170,38 +181,38 @@ a, a:visited {
   font-size: 30px;
   text-shadow: #999999 1px 1px 3px;
 }
-/* line 76, ../../../app/stylesheets/global.sass */
+/* line 80, ../../../app/stylesheets/global.sass */
 #call_to_action em {
   font-size: 36px;
   font-style: italic;
   color: #003399;
 }
 
-/* line 81, ../../../app/stylesheets/global.sass */
+/* line 85, ../../../app/stylesheets/global.sass */
 article.stanza {
   padding: 20px;
 }
-/* line 83, ../../../app/stylesheets/global.sass */
+/* line 87, ../../../app/stylesheets/global.sass */
 article.stanza .title {
   font-size: 26px;
 }
-/* line 85, ../../../app/stylesheets/global.sass */
+/* line 89, ../../../app/stylesheets/global.sass */
 article.stanza .title em {
   color: #333333;
   font-size: 18px;
 }
-/* line 88, ../../../app/stylesheets/global.sass */
+/* line 92, ../../../app/stylesheets/global.sass */
 article.stanza .byline {
   font-size: 13px;
   color: #555555;
   margin: 5px 0px 10px 0px;
 }
-/* line 92, ../../../app/stylesheets/global.sass */
+/* line 96, ../../../app/stylesheets/global.sass */
 article.stanza .content {
   font-size: 16px;
   line-height: 1.2em;
 }
-/* line 95, ../../../app/stylesheets/global.sass */
+/* line 99, ../../../app/stylesheets/global.sass */
 article.stanza .copyright {
   margin-top: 15px;
   font-style: italic;
@@ -209,7 +220,7 @@ article.stanza .copyright {
   color: #555555;
 }
 
-/* line 101, ../../../app/stylesheets/global.sass */
+/* line 105, ../../../app/stylesheets/global.sass */
 #footer {
   font-style: italic;
   padding: 20px;
@@ -217,12 +228,12 @@ article.stanza .copyright {
   color: #333333;
 }
 
-/* line 107, ../../../app/stylesheets/global.sass */
+/* line 111, ../../../app/stylesheets/global.sass */
 .clear {
   clear: both;
 }
 
-/* line 110, ../../../app/stylesheets/global.sass */
+/* line 114, ../../../app/stylesheets/global.sass */
 #top {
   padding: 10px 20px;
   background: #003366;
@@ -237,53 +248,53 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #003366 0%, #003399 100%);
 }
 
-/* line 116, ../../../app/stylesheets/global.sass */
+/* line 120, ../../../app/stylesheets/global.sass */
 #menu {
   float: right;
 }
-/* line 118, ../../../app/stylesheets/global.sass */
+/* line 122, ../../../app/stylesheets/global.sass */
 #menu li.menu_item {
   font-size: 15px;
   display: inline-block;
   margin-left: 10px;
   color: #777777;
 }
-/* line 123, ../../../app/stylesheets/global.sass */
+/* line 127, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a, #menu li.menu_item a:visited {
   color: #cccccc;
 }
-/* line 125, ../../../app/stylesheets/global.sass */
+/* line 129, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a:hover, #menu li.menu_item a:active {
   color: white;
 }
 
-/* line 128, ../../../app/stylesheets/global.sass */
+/* line 132, ../../../app/stylesheets/global.sass */
 #user_detail {
   padding: 20px;
   border-bottom: 1px solid #aaaaaa;
 }
-/* line 131, ../../../app/stylesheets/global.sass */
+/* line 135, ../../../app/stylesheets/global.sass */
 #user_detail #name {
   font-size: 28px;
 }
-/* line 133, ../../../app/stylesheets/global.sass */
+/* line 137, ../../../app/stylesheets/global.sass */
 #user_detail #biography {
   font-size: 16px;
   margin-top: 10px;
 }
-/* line 136, ../../../app/stylesheets/global.sass */
+/* line 140, ../../../app/stylesheets/global.sass */
 #user_detail #joined {
   color: #777777;
   font-size: 14px;
   margin-top: 5px;
 }
 
-/* line 167, ../../../app/stylesheets/global.sass */
+/* line 171, ../../../app/stylesheets/global.sass */
 #create_side_button {
   float: right;
   margin: 20px;
 }
-/* line 155, ../../../app/stylesheets/global.sass */
+/* line 159, ../../../app/stylesheets/global.sass */
 #create_side_button a, #create_side_button a:visited {
   padding: 5px 10px;
   display: inline-block;
@@ -300,7 +311,7 @@ article.stanza .copyright {
   background-image: -moz-linear-gradient(top, #888888 0%, #333333 100%);
   background-image: linear-gradient(top, #888888 0%, #333333 100%);
 }
-/* line 163, ../../../app/stylesheets/global.sass */
+/* line 167, ../../../app/stylesheets/global.sass */
 #create_side_button a:hover, #create_side_button a:active {
   background: #333333;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #555555), color-stop(100%, #000000));
@@ -308,71 +319,71 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #555555 0%, #000000 100%);
 }
 
-/* line 172, ../../../app/stylesheets/global.sass */
+/* line 176, ../../../app/stylesheets/global.sass */
 #comment_section {
   border-top: 1px solid #aaaaaa;
   margin-bottom: 20px;
 }
 
-/* line 176, ../../../app/stylesheets/global.sass */
+/* line 180, ../../../app/stylesheets/global.sass */
 #comments {
   padding: 0px 20px;
 }
-/* line 178, ../../../app/stylesheets/global.sass */
+/* line 182, ../../../app/stylesheets/global.sass */
 #comments .comment {
   margin: 10px 0px 10px 0px;
 }
-/* line 180, ../../../app/stylesheets/global.sass */
+/* line 184, ../../../app/stylesheets/global.sass */
 #comments .comment .author_info {
   font-size: 14px;
 }
-/* line 182, ../../../app/stylesheets/global.sass */
+/* line 186, ../../../app/stylesheets/global.sass */
 #comments .comment .author_info .when {
   color: #aaaaaa;
   margin-left: 5px;
 }
-/* line 185, ../../../app/stylesheets/global.sass */
+/* line 189, ../../../app/stylesheets/global.sass */
 #comments .comment .author_info .user.author {
   background: #fffccc;
 }
-/* line 187, ../../../app/stylesheets/global.sass */
+/* line 191, ../../../app/stylesheets/global.sass */
 #comments .comment .body {
   margin-top: 2px;
   font-size: 16px;
 }
-/* line 190, ../../../app/stylesheets/global.sass */
+/* line 194, ../../../app/stylesheets/global.sass */
 #comments .comment:first-child {
   margin-top: 20px;
 }
-/* line 192, ../../../app/stylesheets/global.sass */
+/* line 196, ../../../app/stylesheets/global.sass */
 #comments .comment:last-child {
   margin-bottom: 0px;
 }
 
-/* line 195, ../../../app/stylesheets/global.sass */
+/* line 199, ../../../app/stylesheets/global.sass */
 .comment_form {
   margin: 20px 20px 0px 20px;
 }
-/* line 197, ../../../app/stylesheets/global.sass */
+/* line 201, ../../../app/stylesheets/global.sass */
 .comment_form textarea {
   height: 80px;
   width: 100%;
   border: 1px solid #777777;
 }
 
-/* line 202, ../../../app/stylesheets/global.sass */
+/* line 206, ../../../app/stylesheets/global.sass */
 .properties {
   font-size: 12px;
 }
-/* line 204, ../../../app/stylesheets/global.sass */
+/* line 208, ../../../app/stylesheets/global.sass */
 .properties * {
   margin-left: 2px;
 }
-/* line 206, ../../../app/stylesheets/global.sass */
+/* line 210, ../../../app/stylesheets/global.sass */
 .properties .private {
   float: right;
 }
-/* line 142, ../../../app/stylesheets/global.sass */
+/* line 146, ../../../app/stylesheets/global.sass */
 .properties .private a, .properties .private a:visited {
   display: inline-block;
   padding: 5px 10px;
@@ -389,18 +400,18 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #aa0000 0%, #770000 100%);
   border: 1px solid #333333;
 }
-/* line 150, ../../../app/stylesheets/global.sass */
+/* line 154, ../../../app/stylesheets/global.sass */
 .properties .private a:hover, .properties .private a:active {
   background: #770000;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #990000), color-stop(100%, #550000));
   background-image: -moz-linear-gradient(top, #990000 0%, #550000 100%);
   background-image: linear-gradient(top, #990000 0%, #550000 100%);
 }
-/* line 209, ../../../app/stylesheets/global.sass */
+/* line 213, ../../../app/stylesheets/global.sass */
 .properties .edit_button, .properties .edit_button:visited {
   float: right;
 }
-/* line 155, ../../../app/stylesheets/global.sass */
+/* line 159, ../../../app/stylesheets/global.sass */
 .properties .edit_button a, .properties .edit_button a:visited, .properties .edit_button:visited a, .properties .edit_button:visited a:visited {
   padding: 5px 10px;
   display: inline-block;
@@ -417,7 +428,7 @@ article.stanza .copyright {
   background-image: -moz-linear-gradient(top, #888888 0%, #333333 100%);
   background-image: linear-gradient(top, #888888 0%, #333333 100%);
 }
-/* line 163, ../../../app/stylesheets/global.sass */
+/* line 167, ../../../app/stylesheets/global.sass */
 .properties .edit_button a:hover, .properties .edit_button a:active, .properties .edit_button:visited a:hover, .properties .edit_button:visited a:active {
   background: #333333;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #555555), color-stop(100%, #000000));
@@ -425,7 +436,7 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #555555 0%, #000000 100%);
 }
 
-/* line 213, ../../../app/stylesheets/global.sass */
+/* line 217, ../../../app/stylesheets/global.sass */
 .ad {
   text-align: left;
   padding: 10px 20px 10px 14px;
