@@ -30,7 +30,7 @@ specs:
     version: 2.3.8
 - thin: 
     version: 1.2.7
-hash: 6d31b36ef59c1e5c553760f040020ba68a39eef3
+hash: dfcfadca0b9f8b94ce80a6ce08b1884565086ce4
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
@@ -43,6 +43,10 @@ dependencies:
     version: = 2.3.8
     group: 
     - :default
+  activerecord: 
+    version: = 2.3.8
+    group: 
+    - :default
   haml: 
     version: = 3.0.17
     group: 
@@ -51,11 +55,11 @@ dependencies:
     version: = 1.2.7
     group: 
     - :default
-  authlogic: 
-    version: = 2.1.5
-    group: 
-    - :default
   friendly_id: 
     version: = 3.0.6
+    group: 
+    - :default
+  authlogic: 
+    version: = 2.1.5
     group: 
     - :default
