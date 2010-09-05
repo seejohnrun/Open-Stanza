@@ -423,3 +423,10 @@ article.stanza .copyright {
   background-image: -moz-linear-gradient(top, #555555 0%, #000000 100%);
   background-image: linear-gradient(top, #555555 0%, #000000 100%);
 }
+
+/* line 212, ../../../app/stylesheets/global.sass */
+.ad {
+  text-align: center;
+  padding: 10px 0px;
+  border-top: 1px solid #aaaaaa;
+}

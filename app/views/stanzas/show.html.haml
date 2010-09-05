@@ -28,6 +28,8 @@
 
 .clear
 
+= render :partial => 'global/adsense'
+
 - comments = @stanza.comments.order('created_at DESC').all(:include => [:user])
 - no_comments = comments.map.empty?
 - if user_logged_in? || !no_comments
