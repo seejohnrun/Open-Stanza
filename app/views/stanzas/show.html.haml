@@ -8,13 +8,18 @@
 
 %article.stanza
 
+  - if @stanza.user == current_user
+    .properties
+      - unless @stanza.public?
+        .private= link_to 'private', edit_stanza_path(@stanza)
+      .edit_button
+        = link_to 'edit', edit_stanza_path(@stanza)
+
   .title
     =h @stanza.title
 
   .byline
     == by #{link_to @stanza.user.public_name, @stanza.user}
-    - if @stanza.user == current_user
-      %em= "(#{link_to 'edit', edit_stanza_path(@stanza)})"
 
   .content= h(@stanza.body).gsub(/\n/, '<br/>')
 

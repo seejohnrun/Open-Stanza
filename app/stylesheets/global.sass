@@ -137,20 +137,36 @@ article.stanza
     font-size: 14px
     margin-top: 5px 
 
-#create_side_button
-  float: right
-  margin: 20px
+@mixin red-button
+  a, a:visited
+    display: inline-block
+    padding: 5px 10px
+    background: #990000
+    color: #fff
+    +border-radius(5px)
+    +linear-gradient(color-stops(#aa0000, #770000))
+    border: 1px solid #333
+  a:hover, a:active
+    background: #770000
+    +linear-gradient(color-stops(#990000, #550000))
+
+@mixin grey-button 
   a, a:visited
     padding: 5px 10px
-    display: block
+    display: inline-block
     color: #fff
-    +border-radius(3px 3px 3px 3px)
+    +border-radius(3px)
     background: #555
     border: 1px solid #333
     +linear-gradient(color-stops(#888, #333))
   a:hover, a:active
-    background: #333 
-    +linear-gradient(color-stops(#555, #000))
+    background: #333
+    +linear-gradient(color-stops(#555, #000))  
+
+#create_side_button
+  float: right
+  margin: 20px
+  @include grey-button
 
 #comment_section
   border-top: 1px solid #aaa
@@ -181,4 +197,14 @@ article.stanza
     height: 80px
     width: 100%
     border: 1px solid #777
-  
+
+.properties
+  font-size: 12px
+  * 
+    margin-left: 2px
+  .private
+    float: right
+    @include red-button
+  .edit_button, .edit_button:visited
+    float: right
+    @include grey-button
