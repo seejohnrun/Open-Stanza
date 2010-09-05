@@ -1,6 +1,6 @@
 class Stanza < ActiveRecord::Base
 
-  has_friendly_id :title, :use_slug => true, :max_length => 5
+  has_friendly_id :title, :use_slug => true, :max_length => 50
   belongs_to :user
   has_many :comments, :dependent => :destroy
 
