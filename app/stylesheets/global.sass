@@ -204,14 +204,13 @@ article.stanza
 
 .properties
   float: right
-  margin-right: 10px
-  font-size: 12px
+  font-size: 13px
   * 
     display: inline-block
     margin-left: 2px
-  .private
+  .private, .delete_button
     @include red-button
-  .edit_button, .edit_button:visited
+  .edit_button, .view_button
     @include grey-button
 
 .ad
@@ -234,3 +233,6 @@ article.stanza
     border: 1px solid #ccc
     font-family: monospace
     margin: 20px 0px
+
+.content 
+  padding: 20px

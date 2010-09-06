@@ -371,16 +371,15 @@ article.stanza .copyright {
 /* line 205, ../../../app/stylesheets/global.sass */
 .properties {
   float: right;
-  margin-right: 10px;
-  font-size: 12px;
+  font-size: 13px;
 }
-/* line 209, ../../../app/stylesheets/global.sass */
+/* line 208, ../../../app/stylesheets/global.sass */
 .properties * {
   display: inline-block;
   margin-left: 2px;
 }
 /* line 145, ../../../app/stylesheets/global.sass */
-.properties .private a, .properties .private a:visited {
+.properties .private a, .properties .private a:visited, .properties .delete_button a, .properties .delete_button a:visited {
   display: inline-block;
   padding: 5px 10px;
   background: #990000;
@@ -397,14 +396,14 @@ article.stanza .copyright {
   border: 1px solid #333333;
 }
 /* line 153, ../../../app/stylesheets/global.sass */
-.properties .private a:hover, .properties .private a:active {
+.properties .private a:hover, .properties .private a:active, .properties .delete_button a:hover, .properties .delete_button a:active {
   background: #770000;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #990000), color-stop(100%, #550000));
   background-image: -moz-linear-gradient(top, #990000 0%, #550000 100%);
   background-image: linear-gradient(top, #990000 0%, #550000 100%);
 }
 /* line 158, ../../../app/stylesheets/global.sass */
-.properties .edit_button a, .properties .edit_button a:visited, .properties .edit_button:visited a, .properties .edit_button:visited a:visited {
+.properties .edit_button a, .properties .edit_button a:visited, .properties .view_button a, .properties .view_button a:visited {
   padding: 5px 10px;
   display: inline-block;
   color: white;
@@ -421,40 +420,45 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #888888 0%, #333333 100%);
 }
 /* line 166, ../../../app/stylesheets/global.sass */
-.properties .edit_button a:hover, .properties .edit_button a:active, .properties .edit_button:visited a:hover, .properties .edit_button:visited a:active {
+.properties .edit_button a:hover, .properties .edit_button a:active, .properties .view_button a:hover, .properties .view_button a:active {
   background: #333333;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #555555), color-stop(100%, #000000));
   background-image: -moz-linear-gradient(top, #555555 0%, #000000 100%);
   background-image: linear-gradient(top, #555555 0%, #000000 100%);
 }
 
-/* line 217, ../../../app/stylesheets/global.sass */
+/* line 216, ../../../app/stylesheets/global.sass */
 .ad {
   text-align: left;
   padding: 10px 20px 10px 14px;
   border-top: 1px solid #aaaaaa;
 }
 
-/* line 222, ../../../app/stylesheets/global.sass */
+/* line 221, ../../../app/stylesheets/global.sass */
 .error {
   padding: 20px;
 }
-/* line 224, ../../../app/stylesheets/global.sass */
+/* line 223, ../../../app/stylesheets/global.sass */
 .error .title {
   color: #990000;
   font-size: 24px;
   margin-bottom: 10px;
 }
-/* line 228, ../../../app/stylesheets/global.sass */
+/* line 227, ../../../app/stylesheets/global.sass */
 .error .description {
   color: #333333;
   font-size: 18px;
 }
-/* line 231, ../../../app/stylesheets/global.sass */
+/* line 230, ../../../app/stylesheets/global.sass */
 .error .poem {
   padding: 20px;
   background: #eeeeee;
   border: 1px solid #cccccc;
   font-family: monospace;
   margin: 20px 0px;
+}
+
+/* line 237, ../../../app/stylesheets/global.sass */
+.content {
+  padding: 20px;
 }

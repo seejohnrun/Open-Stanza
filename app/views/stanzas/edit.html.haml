@@ -1,32 +1,38 @@
 - @page_title = "Editing #{@stanza.title}"
 
-= link_to 'Delete Stanza', stanza_path(@stanza), :method => :delete, :confirm => "Are you sure you want to permenantly remove #{@stanza.title}?"
+.content
 
-%h1== Edit &quot;#{@stanza.title}&quot;
+  .properties
+    .view_button
+      = link_to 'View Stanza', stanza_path(@stanza)
+    .delete_button
+      = link_to 'Delete Stanza', stanza_path(@stanza), :method => :delete, :confirm => "Are you sure you want to permenantly remove #{@stanza.title}?"
 
-- form_for @stanza, :url => stanza_path do |f|
+  %h1== Edit &quot;#{@stanza.title}&quot;
 
-  = f.error_messages
+  - form_for @stanza, :url => stanza_path do |f|
 
-  %br
+    = f.error_messages
+
+    %br
  
-  = f.label :title
-  = f.text_field :title
+    = f.label :title
+    = f.text_field :title
 
-  %br
+    %br
 
-  = f.label :public, 'Public?'
-  = f.check_box :public
+    = f.label :public, 'Public?'
+    = f.check_box :public
 
-  %br
+    %br
 
-  = f.text_area :body
+    = f.text_area :body
 
-  %br
+    %br
  
-  = f.label :copyright_notice, 'Copyright Details'
-  = f.text_field :copyright_notice
+    = f.label :copyright_notice, 'Copyright Details'
+    = f.text_field :copyright_notice
 
-  %br
+    %br
 
-  = f.submit 'Save Changes'
+    = f.submit 'Save Changes'
