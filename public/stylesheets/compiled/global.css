@@ -202,14 +202,15 @@ article.stanza .title em {
 article.stanza .byline {
   font-size: 13px;
   color: #555555;
-  margin: 5px 0px 10px 0px;
+  margin: 5px 0px 0px 0px;
 }
 /* line 95, ../../../app/stylesheets/global.sass */
 article.stanza .content {
+  margin-top: 1em;
   font-size: 16px;
   line-height: 1.2em;
 }
-/* line 98, ../../../app/stylesheets/global.sass */
+/* line 99, ../../../app/stylesheets/global.sass */
 article.stanza .copyright {
   margin-top: 15px;
   font-style: italic;
@@ -217,7 +218,7 @@ article.stanza .copyright {
   color: #555555;
 }
 
-/* line 104, ../../../app/stylesheets/global.sass */
+/* line 105, ../../../app/stylesheets/global.sass */
 #footer {
   font-style: italic;
   padding: 20px;
@@ -225,12 +226,12 @@ article.stanza .copyright {
   color: #333333;
 }
 
-/* line 110, ../../../app/stylesheets/global.sass */
+/* line 111, ../../../app/stylesheets/global.sass */
 .clear {
   clear: both;
 }
 
-/* line 113, ../../../app/stylesheets/global.sass */
+/* line 114, ../../../app/stylesheets/global.sass */
 #top {
   padding: 10px 20px;
   background: #003366;
@@ -245,53 +246,53 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #003366 0%, #003399 100%);
 }
 
-/* line 119, ../../../app/stylesheets/global.sass */
+/* line 120, ../../../app/stylesheets/global.sass */
 #menu {
   float: right;
 }
-/* line 121, ../../../app/stylesheets/global.sass */
+/* line 122, ../../../app/stylesheets/global.sass */
 #menu li.menu_item {
   font-size: 15px;
   display: inline-block;
   margin-left: 10px;
   color: #777777;
 }
-/* line 126, ../../../app/stylesheets/global.sass */
+/* line 127, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a, #menu li.menu_item a:visited {
   color: #cccccc;
 }
-/* line 128, ../../../app/stylesheets/global.sass */
+/* line 129, ../../../app/stylesheets/global.sass */
 #menu li.menu_item a:hover, #menu li.menu_item a:active {
   color: white;
 }
 
-/* line 131, ../../../app/stylesheets/global.sass */
+/* line 132, ../../../app/stylesheets/global.sass */
 #user_detail {
   padding: 20px;
   border-bottom: 1px solid #aaaaaa;
 }
-/* line 134, ../../../app/stylesheets/global.sass */
+/* line 135, ../../../app/stylesheets/global.sass */
 #user_detail #name {
   font-size: 28px;
 }
-/* line 136, ../../../app/stylesheets/global.sass */
+/* line 137, ../../../app/stylesheets/global.sass */
 #user_detail #biography {
   font-size: 16px;
   margin-top: 10px;
 }
-/* line 139, ../../../app/stylesheets/global.sass */
+/* line 140, ../../../app/stylesheets/global.sass */
 #user_detail #joined {
   color: #777777;
   font-size: 14px;
   margin-top: 5px;
 }
 
-/* line 170, ../../../app/stylesheets/global.sass */
+/* line 171, ../../../app/stylesheets/global.sass */
 #create_side_button {
   float: right;
   margin: 20px;
 }
-/* line 158, ../../../app/stylesheets/global.sass */
+/* line 159, ../../../app/stylesheets/global.sass */
 #create_side_button a, #create_side_button a:visited {
   padding: 5px 10px;
   display: inline-block;
@@ -308,7 +309,7 @@ article.stanza .copyright {
   background-image: -moz-linear-gradient(top, #888888 0%, #333333 100%);
   background-image: linear-gradient(top, #888888 0%, #333333 100%);
 }
-/* line 166, ../../../app/stylesheets/global.sass */
+/* line 167, ../../../app/stylesheets/global.sass */
 #create_side_button a:hover, #create_side_button a:active {
   background: #333333;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #555555), color-stop(100%, #000000));
@@ -316,69 +317,69 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #555555 0%, #000000 100%);
 }
 
-/* line 175, ../../../app/stylesheets/global.sass */
+/* line 176, ../../../app/stylesheets/global.sass */
 #comment_section {
   border-top: 1px solid #aaaaaa;
   margin-bottom: 20px;
 }
 
-/* line 179, ../../../app/stylesheets/global.sass */
+/* line 180, ../../../app/stylesheets/global.sass */
 #comments {
   padding: 0px 20px;
 }
-/* line 181, ../../../app/stylesheets/global.sass */
+/* line 182, ../../../app/stylesheets/global.sass */
 #comments .comment {
   margin: 10px 0px 10px 0px;
 }
-/* line 183, ../../../app/stylesheets/global.sass */
+/* line 184, ../../../app/stylesheets/global.sass */
 #comments .comment .author_info {
   font-size: 14px;
 }
-/* line 185, ../../../app/stylesheets/global.sass */
+/* line 186, ../../../app/stylesheets/global.sass */
 #comments .comment .author_info .when {
   color: #aaaaaa;
   margin-left: 5px;
 }
-/* line 188, ../../../app/stylesheets/global.sass */
+/* line 189, ../../../app/stylesheets/global.sass */
 #comments .comment .author_info .user.author {
   background: #fffccc;
 }
-/* line 190, ../../../app/stylesheets/global.sass */
+/* line 191, ../../../app/stylesheets/global.sass */
 #comments .comment .body {
   margin-top: 2px;
   font-size: 16px;
 }
-/* line 193, ../../../app/stylesheets/global.sass */
+/* line 194, ../../../app/stylesheets/global.sass */
 #comments .comment:first-child {
   margin-top: 20px;
 }
-/* line 195, ../../../app/stylesheets/global.sass */
+/* line 196, ../../../app/stylesheets/global.sass */
 #comments .comment:last-child {
   margin-bottom: 0px;
 }
 
-/* line 198, ../../../app/stylesheets/global.sass */
+/* line 199, ../../../app/stylesheets/global.sass */
 .comment_form {
   margin: 20px 20px 0px 20px;
 }
-/* line 200, ../../../app/stylesheets/global.sass */
+/* line 201, ../../../app/stylesheets/global.sass */
 .comment_form textarea {
   height: 80px;
   width: 100%;
   border: 1px solid #777777;
 }
 
-/* line 205, ../../../app/stylesheets/global.sass */
+/* line 206, ../../../app/stylesheets/global.sass */
 .properties {
   float: right;
   font-size: 13px;
 }
-/* line 208, ../../../app/stylesheets/global.sass */
+/* line 209, ../../../app/stylesheets/global.sass */
 .properties * {
   display: inline-block;
   margin-left: 2px;
 }
-/* line 145, ../../../app/stylesheets/global.sass */
+/* line 146, ../../../app/stylesheets/global.sass */
 .properties .private a, .properties .private a:visited, .properties .delete_button a, .properties .delete_button a:visited {
   display: inline-block;
   padding: 5px 10px;
@@ -395,14 +396,14 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #aa0000 0%, #770000 100%);
   border: 1px solid #333333;
 }
-/* line 153, ../../../app/stylesheets/global.sass */
+/* line 154, ../../../app/stylesheets/global.sass */
 .properties .private a:hover, .properties .private a:active, .properties .delete_button a:hover, .properties .delete_button a:active {
   background: #770000;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #990000), color-stop(100%, #550000));
   background-image: -moz-linear-gradient(top, #990000 0%, #550000 100%);
   background-image: linear-gradient(top, #990000 0%, #550000 100%);
 }
-/* line 158, ../../../app/stylesheets/global.sass */
+/* line 159, ../../../app/stylesheets/global.sass */
 .properties .edit_button a, .properties .edit_button a:visited, .properties .view_button a, .properties .view_button a:visited {
   padding: 5px 10px;
   display: inline-block;
@@ -419,7 +420,7 @@ article.stanza .copyright {
   background-image: -moz-linear-gradient(top, #888888 0%, #333333 100%);
   background-image: linear-gradient(top, #888888 0%, #333333 100%);
 }
-/* line 166, ../../../app/stylesheets/global.sass */
+/* line 167, ../../../app/stylesheets/global.sass */
 .properties .edit_button a:hover, .properties .edit_button a:active, .properties .view_button a:hover, .properties .view_button a:active {
   background: #333333;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #555555), color-stop(100%, #000000));
@@ -427,29 +428,29 @@ article.stanza .copyright {
   background-image: linear-gradient(top, #555555 0%, #000000 100%);
 }
 
-/* line 216, ../../../app/stylesheets/global.sass */
+/* line 217, ../../../app/stylesheets/global.sass */
 .ad {
   text-align: left;
   padding: 10px 20px 10px 14px;
   border-top: 1px solid #aaaaaa;
 }
 
-/* line 221, ../../../app/stylesheets/global.sass */
+/* line 222, ../../../app/stylesheets/global.sass */
 .error {
   padding: 20px;
 }
-/* line 223, ../../../app/stylesheets/global.sass */
+/* line 224, ../../../app/stylesheets/global.sass */
 .error .title {
   color: #990000;
   font-size: 24px;
   margin-bottom: 10px;
 }
-/* line 227, ../../../app/stylesheets/global.sass */
+/* line 228, ../../../app/stylesheets/global.sass */
 .error .description {
   color: #333333;
   font-size: 18px;
 }
-/* line 230, ../../../app/stylesheets/global.sass */
+/* line 231, ../../../app/stylesheets/global.sass */
 .error .poem {
   padding: 20px;
   background: #eeeeee;
@@ -458,7 +459,7 @@ article.stanza .copyright {
   margin: 20px 0px;
 }
 
-/* line 237, ../../../app/stylesheets/global.sass */
+/* line 238, ../../../app/stylesheets/global.sass */
 .content_wrapper {
   padding: 20px;
 }
