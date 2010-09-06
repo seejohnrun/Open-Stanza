@@ -61,8 +61,16 @@ class ApplicationController < ActionController::Base
     if status_code == :not_found
       render_404
     else
-      super
+      render_error status_code
     end
+  end
+
+  def render_error(status_code = 500)
+    respond_to do |type|
+      type.html { render :template => 'errors/general', :status => status_code }
+      type.all { render :nothing => true, :status => status_code }
+    end
+    true
   end
   
   def render_404
