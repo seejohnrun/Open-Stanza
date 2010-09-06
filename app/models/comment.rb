@@ -5,7 +5,7 @@ class Comment < ActiveRecord::Base
   
   validates_presence_of :user
   validates_presence_of :stanza
-  validates_length_of :body, :maximum => 5000
+  validates_length_of :body, :within => 1..5000
 
   attr_accessible :body
 
