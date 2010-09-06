@@ -5,7 +5,7 @@
       %li
         .clear
         - css_class = stanza.public? ? 'public_dash' : 'private_dash'
-        == <span class='#{css_class}'>&#x2015</span>
+        == <span class='#{css_class}'>&mdash;</span>
 
         = link_to stanza.title, stanza
         - if show_author
