@@ -459,6 +459,6 @@ article.stanza .copyright {
 }
 
 /* line 237, ../../../app/stylesheets/global.sass */
-.content {
+.content_wrapper {
   padding: 20px;
 }
