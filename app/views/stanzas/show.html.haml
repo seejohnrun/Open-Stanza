@@ -21,6 +21,7 @@
 
   .byline
     == by #{link_to @stanza.user.public_name, @stanza.user}
+    == on #{@stanza.created_at.to_s(:long_ordinal)}
 
   .content= h(@stanza.body).gsub(/\n/, '<br/>')
 
