@@ -8,8 +8,8 @@
 
   #name= @user.public_name
   #joined 
-    Joined
-    = @user.created_at.to_s(:long_ordinal)
+    Member Since
+    = @user.created_at.to_s(:nice_date_format)
 
   - unless @user.biography.blank?
     #biography= h(@user.biography).gsub(/\n/, '<br/>') 

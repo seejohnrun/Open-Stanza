@@ -29,7 +29,7 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 end
 
-ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(:nice_format => '%B %e %Y, %l:%M %p')
+ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(:nice_format => '%B %e, %Y - %l:%M %p', :nice_date_format => '%B %e, %Y')
 
 require "rubygems"
 require "bundler/setup"
