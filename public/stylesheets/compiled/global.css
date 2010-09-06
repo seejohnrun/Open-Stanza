@@ -450,3 +450,11 @@ article.stanza .copyright {
   color: #333333;
   font-size: 18px;
 }
+/* line 231, ../../../app/stylesheets/global.sass */
+.error .poem {
+  padding: 20px;
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  font-family: monospace;
+  margin: 20px 0px;
+}
