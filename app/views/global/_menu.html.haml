@@ -3,8 +3,8 @@
   - if user_logged_in?
     %li.menu_item= link_to 'Stanzas', user_path(current_user)
     %li.menu_item= link_to 'Account', edit_account_path
-    %li.menu_item= link_to 'Logout', user_session_path, :method => :delete
+    %li.menu_item= link_to 'Logout', logout_path
   - else
-    %li.menu_item= link_to 'Login', new_user_session_path
-    %li.menu_item= link_to 'Register', new_account_path
+    %li.menu_item= link_to 'Login', login_path
+    %li.menu_item= link_to 'Register', register_path
       
