@@ -1,0 +1,4 @@
+RewriteEngineOn
+
+RewriteCond %{HTTP_HOST} ^socialstanza\.com$ [NC]
+RewriteRule ^(.*)$ http://www.socialstanza.com/$1 [L,R=301]
