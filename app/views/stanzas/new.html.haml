@@ -1,30 +1,32 @@
 - @page_title = 'New Stanza'
 
-%h1 New Stanza
+.content_wrapper
 
-- form_for @stanza, stanzas_path do |f|
+  %h1 New Stanza
 
-  = f.error_messages
+  - form_for @stanza, stanzas_path do |f|
 
-  %br
+    = f.error_messages
 
-  = f.label :title
-  = f.text_field :title
+    %br
 
-  %br
+    = f.label :title
+    = f.text_field :title
 
-  = f.label :public, 'Public?'
-  = f.check_box :public
+    %br
 
-  %br
+    = f.label :public, 'Public?'
+    = f.check_box :public
 
-  = f.text_area :body
+    %br
 
-  %br
+    = f.text_area :body
 
-  = f.label :copyright_notice, 'Copyright Details'
-  = f.text_field :copyright_notice
+    %br
 
-  %br
+    = f.label :copyright_notice, 'Copyright Details'
+    = f.text_field :copyright_notice
 
-  = f.submit 'Save Stanza'
+    %br
+      
+    = f.submit 'Save Stanza'

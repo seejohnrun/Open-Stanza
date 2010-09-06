@@ -1,31 +1,32 @@
 - @page_title = 'Register'
 
-%h1 Register
+.content_wrapper
 
-- form_for @user, :url => account_path do |f|
+  %h1 Register
+
+  - form_for @user, :url => account_path do |f|
   
-  = f.error_messages
+    = f.error_messages
+    
+    = f.label :email
+    = f.text_field :email
 
-  %br
+    %br
 
-  = f.label :email
-  = f.text_field :email
+    = f.label :display_name
+    = f.text_field :display_name
+    %span.description ie: &quot;John Smith&quot;
 
-  %br
+    %br
 
-  = f.label :display_name
-  = f.text_field :display_name
+    = f.label :password
+    = f.password_field :password
 
-  %br
+    %br
 
-  = f.label :password
-  = f.password_field :password
+    = f.label :password_confirmation, 'Verify Password'
+    = f.password_field :password_confirmation
 
-  %br
+    %br
 
-  = f.label :password_confirmation
-  = f.password_field :password_confirmation
-
-  %br
-
-  = f.submit 'Register'  
+    = f.submit 'Register'  

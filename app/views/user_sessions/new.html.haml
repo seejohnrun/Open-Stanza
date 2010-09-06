@@ -1,21 +1,21 @@
 - @page_title = 'Login'
 
-%h1 Login
+.content_wrapper
 
-- form_for @user_session, :url => user_session_path do |f|
+  %h1 Login
+
+  - form_for @user_session, :url => user_session_path do |f|
   
-  = f.error_messages
+    = f.error_messages
 
-  %br
+    = f.label :email
+    = f.text_field :email
 
-  = f.label :email
-  = f.text_field :email
+    %br
 
-  %br
+    = f.label :password
+    = f.password_field :password
 
-  = f.label :password
-  = f.password_field :password
+    %br
 
-  %br
-
-  = f.submit 'Login'
+    = f.submit 'Login'

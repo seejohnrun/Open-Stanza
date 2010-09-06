@@ -238,6 +238,9 @@ article.stanza
 
 .content_wrapper
   padding: 20px
+  h1 
+    font-size: 24px
+    color: #003366
 
 .admin
   padding: 20px 20px 10px 20px
@@ -251,3 +254,38 @@ article.stanza
       background: #eee
       border: 1px solid #aaa
       padding: 10px
+
+form.new_user_session, form.new_user, form.edit_stanza, form.new_stanza, form.edit_user
+  margin-top: 10px
+  label
+    width: 130px
+    display: inline-block
+  input
+    border: 1px solid #777
+    font-size: 14px
+    padding: 3px
+    width: 200px
+    margin: 5px 0px
+  textarea
+    width: 100%
+    font-size: 14px 
+    padding: 10px
+    margin: 5px 0px
+    height: 300px
+  .description
+    font-style: italic
+    margin-left: 5px
+    display: inline-block
+    color: #777
+    em
+      font-weight: bold
+      font-style: normal
+
+.fieldWithErrors 
+  display: inline-block
+
+.errorExplanation
+  margin-bottom: 10px
+  color: #990000
+  h2, p
+    display: none  

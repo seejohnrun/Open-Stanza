@@ -464,24 +464,82 @@ article.stanza .copyright {
 .content_wrapper {
   padding: 20px;
 }
+/* line 241, ../../../app/stylesheets/global.sass */
+.content_wrapper h1 {
+  font-size: 24px;
+  color: #003366;
+}
 
-/* line 242, ../../../app/stylesheets/global.sass */
+/* line 245, ../../../app/stylesheets/global.sass */
 .admin {
   padding: 20px 20px 10px 20px;
 }
-/* line 244, ../../../app/stylesheets/global.sass */
+/* line 247, ../../../app/stylesheets/global.sass */
 .admin .section {
   margin-bottom: 10px;
 }
-/* line 246, ../../../app/stylesheets/global.sass */
+/* line 249, ../../../app/stylesheets/global.sass */
 .admin .section .title {
   font-size: 20px;
   color: #003399;
 }
-/* line 249, ../../../app/stylesheets/global.sass */
+/* line 252, ../../../app/stylesheets/global.sass */
 .admin .section .data {
   margin-top: 10px;
   background: #eeeeee;
   border: 1px solid #aaaaaa;
   padding: 10px;
+}
+
+/* line 258, ../../../app/stylesheets/global.sass */
+form.new_user_session, form.new_user, form.edit_stanza, form.new_stanza, form.edit_user {
+  margin-top: 10px;
+}
+/* line 260, ../../../app/stylesheets/global.sass */
+form.new_user_session label, form.new_user label, form.edit_stanza label, form.new_stanza label, form.edit_user label {
+  width: 130px;
+  display: inline-block;
+}
+/* line 263, ../../../app/stylesheets/global.sass */
+form.new_user_session input, form.new_user input, form.edit_stanza input, form.new_stanza input, form.edit_user input {
+  border: 1px solid #777777;
+  font-size: 14px;
+  padding: 3px;
+  width: 200px;
+  margin: 5px 0px;
+}
+/* line 269, ../../../app/stylesheets/global.sass */
+form.new_user_session textarea, form.new_user textarea, form.edit_stanza textarea, form.new_stanza textarea, form.edit_user textarea {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px 0px;
+  height: 300px;
+}
+/* line 275, ../../../app/stylesheets/global.sass */
+form.new_user_session .description, form.new_user .description, form.edit_stanza .description, form.new_stanza .description, form.edit_user .description {
+  font-style: italic;
+  margin-left: 5px;
+  display: inline-block;
+  color: #777777;
+}
+/* line 280, ../../../app/stylesheets/global.sass */
+form.new_user_session .description em, form.new_user .description em, form.edit_stanza .description em, form.new_stanza .description em, form.edit_user .description em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 284, ../../../app/stylesheets/global.sass */
+.fieldWithErrors {
+  display: inline-block;
+}
+
+/* line 287, ../../../app/stylesheets/global.sass */
+.errorExplanation {
+  margin-bottom: 10px;
+  color: #990000;
+}
+/* line 290, ../../../app/stylesheets/global.sass */
+.errorExplanation h2, .errorExplanation p {
+  display: none;
 }
