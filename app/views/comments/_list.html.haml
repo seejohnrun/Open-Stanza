@@ -10,6 +10,6 @@
         - else
           %span.user= link_to comment.user.public_name, user_path(comment.user)
 
-        %span.when= comment.created_at.to_s(:long_ordinal)
+        %span.when= comment.created_at.to_s(:nice_format)
 
       .body= comment.body
