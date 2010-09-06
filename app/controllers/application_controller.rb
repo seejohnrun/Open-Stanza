@@ -25,9 +25,7 @@ class ApplicationController < ActionController::Base
   def require_admin
     unless current_user && current_user.admin?
       store_location
-      flash[:notice] = 'You must be an admin to access this page'
-      redirect_to root_url
-      return false
+      render_404; return false # act like it doesn't exist
     end
   end
   
