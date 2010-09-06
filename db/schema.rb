@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100901220657) do
+ActiveRecord::Schema.define(:version => 20100906164140) do
 
   create_table "comments", :force => true do |t|
     t.integer  "user_id",                             :null => false
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20100901220657) do
     t.string   "current_login_ip",   :limit => 18
     t.string   "last_login_ip",      :limit => 18
     t.text     "biography"
+    t.boolean  "admin",                            :default => false, :null => false
   end
 
   add_index "users", ["short_name"], :name => "short_name_unique", :unique => true
