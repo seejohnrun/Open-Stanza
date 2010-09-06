@@ -434,3 +434,19 @@ article.stanza .copyright {
   padding: 10px 20px 10px 14px;
   border-top: 1px solid #aaaaaa;
 }
+
+/* line 222, ../../../app/stylesheets/global.sass */
+.error {
+  padding: 20px;
+}
+/* line 224, ../../../app/stylesheets/global.sass */
+.error .title {
+  color: #990000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+/* line 228, ../../../app/stylesheets/global.sass */
+.error .description {
+  color: #333333;
+  font-size: 18px;
+}
