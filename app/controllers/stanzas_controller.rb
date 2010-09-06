@@ -40,6 +40,7 @@ class StanzasController < ApplicationController
   end
   
   def show
+    help
     @more_by_author = Stanza.published.public.by_user(@stanza.user).most_recent.limit(5).exclude(@stanza)
     @most_discussed_by_author = Stanza.published.public.by_user(@stanza.user).most_comments.limit(5).exclude(@stanza)
   end
