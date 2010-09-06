@@ -1,8 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www\..* [NC]
-RewriteRule ^(.*) http://www.%{HTTP_HOST}/$1 [R=301]
-
-<Files .htaccess>
-order allow,deny
-deny from all
-</Files>
