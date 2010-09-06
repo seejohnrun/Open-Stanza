@@ -47,6 +47,8 @@ ActionController::Routing::Routes.draw do |map|
   end
   
   map.resources :users
+
+  map.resource :admin
   
   map.root :controller => 'welcome'
   

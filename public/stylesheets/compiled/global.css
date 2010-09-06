@@ -464,3 +464,24 @@ article.stanza .copyright {
 .content_wrapper {
   padding: 20px;
 }
+
+/* line 242, ../../../app/stylesheets/global.sass */
+.admin {
+  padding: 20px 20px 10px 20px;
+}
+/* line 244, ../../../app/stylesheets/global.sass */
+.admin .section {
+  margin-bottom: 10px;
+}
+/* line 246, ../../../app/stylesheets/global.sass */
+.admin .section .title {
+  font-size: 20px;
+  color: #003399;
+}
+/* line 249, ../../../app/stylesheets/global.sass */
+.admin .section .data {
+  margin-top: 10px;
+  background: #eeeeee;
+  border: 1px solid #aaaaaa;
+  padding: 10px;
+}

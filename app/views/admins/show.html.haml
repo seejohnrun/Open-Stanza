@@ -1,0 +1,10 @@
+.admin
+  .section
+    .title User Count
+    .data= @user_count
+
+  .section
+    .title Most Recent 5 Users
+    .data
+      - @most_recent_users.each do |user|
+        %li= link_to user.public_name, user_path(user)
