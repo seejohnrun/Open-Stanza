@@ -47,11 +47,11 @@ class StanzasController < ApplicationController
   private
 
   def only_author
-    (render_404; return false) unless current_user == @stanza.user
+    (render_404; return false) unless current_user == @stanza.user || current_user.admin?
   end
   
   def block_private
-    (render_404; return false) unless @stanza.public? || @stanza.user == current_user #TODO move to a before_filter
+    (render_404; return false) unless @stanza.public? || @stanza.user == current_user || current_user.admin? #TODO move to a before_filter
   end
   
   def load_stanza
