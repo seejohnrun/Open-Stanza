@@ -24,6 +24,7 @@ GEM
     hassle (0.0.1)
       haml
       rack
+    json_pure (1.4.6)
     mysql (2.8.1)
     rack (1.1.0)
     rails (2.3.8)
@@ -34,6 +35,8 @@ GEM
       activesupport (= 2.3.8)
       rake (>= 0.8.3)
     rake (0.8.7)
+    rpx_now (0.6.23)
+      json_pure
     thin (1.2.7)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -52,4 +55,5 @@ DEPENDENCIES
   hassle (~> 0.0.1)
   mysql (= 2.8.1)
   rails (= 2.3.8)
+  rpx_now (~> 0.6.23)
   thin (= 1.2.7)

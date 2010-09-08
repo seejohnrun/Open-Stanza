@@ -7,11 +7,8 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
   # Add additional load paths for your own custom dirs
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
-
-  config.gem 'haml', :version => '3.0.17'
-  config.gem 'friendly_id', :version => '3.0.6'
-  config.gem 'compass', :version => '0.10.4'
-  config.gem 'authlogic', :version => '2.1.5'
+  
+  # No config.gem here, use bundler's Gemfile
   
   # Skip frameworks you're not going to use. To use Rails without a database,
   # you must remove the Active Record framework.
@@ -27,9 +24,10 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+  
+  config.after_initialize do # so rake gems:install works
+    RPXNow.api_key = ENV['RPX_API_KEY']
+  end
 end
 
 ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(:nice_format => '%B %e, %Y - %l:%M %p', :nice_date_format => '%B %e, %Y')
-
-require "rubygems"
-require "bundler/setup"
