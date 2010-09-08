@@ -57,4 +57,3 @@ vendor/gems/
 railties/tmp
 solr/data
 log/solr_*.log*
-public/stylesheets/compiled
