@@ -16,7 +16,9 @@ class ApplicationController < ActionController::Base
   end
 
   def add_www
-    redirect_to request.protocol + "www." + request.host_with_port + request.request_uri if !/^www/.match(request.host)
+    if Rails.env == 'production'
+      redirect_to request.protocol + "www." + request.host_with_port + request.request_uri, :status => :moved_permenantly if !/^www/.match(request.host)
+    end
   end
 
   def user_logged_in?
