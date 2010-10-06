@@ -5,12 +5,18 @@ class ApplicationController < ActionController::Base
   
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
+  before_filter :add_www
+
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password, :password_confirmation
   
   def current_user_session
     return @current_user_session if defined?(@current_user_session)
     @current_user_session = UserSession.find
+  end
+
+  def add_www
+    redirect_to request.protocol + "www." + request.host_with_port + request.request_uri if !/^www/.match(request.host)
   end
 
   def user_logged_in?
