@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
 
   def add_www
     if Rails.env == 'production'
-      redirect_to request.protocol + "www." + request.host_with_port + request.request_uri, :status => :moved_permenantly if !/^www/.match(request.host)
+      redirect_to request.protocol + "www." + request.host_with_port + request.request_uri, :status => :found if !/^www/.match(request.host)
     end
   end
 
